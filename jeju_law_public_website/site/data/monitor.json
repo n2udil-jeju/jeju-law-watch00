@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-17 14:45 KST",
+  "bills": [],
+  "law": null,
+  "events": [],
+  "sources": {
+    "assembly": {
+      "status": "인증키 미설정",
+      "checked_at": "2026-11-17 14:45 KST"
+    },
+    "law": {
+      "status": "인증키 미설정",
+      "checked_at": "2026-11-17 14:45 KST"
+    }
+  }
+}
