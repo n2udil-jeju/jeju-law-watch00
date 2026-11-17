@@ -1,0 +1,48 @@
+name: 제주특별법 공개 모니터링 자동 갱신
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17,47 * * * *" # UTC 기준 매시 17분, 47분. 실제 실행 지연 가능
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-jeju-law-watch
+  cancel-in-progress: false
+jobs:
+  refresh-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 공식 데이터 갱신
+        env:
+          ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
+          LAW_OC: ${{ secrets.LAW_OC }}
+        run: python scripts/collect.py
+      - name: 공개 변경이력 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/monitor.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update public legislation feed"
+            git push
+          fi
+      - name: GitHub Pages 환경 준비
+        uses: actions/configure-pages@v5
+      - name: 사이트 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: 공개 홈페이지 배포
+        id: deployment
+        uses: actions/deploy-pages@v4
