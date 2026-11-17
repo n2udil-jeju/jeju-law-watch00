@@ -1,16 +1,251 @@
 {
-  "checked_at": "2026-11-17 14:45 KST",
-  "bills": [],
+  "checked_at": "2026-11-17 18:42 KST",
+  "bills": [
+    {
+      "number": "2222797",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "송언석의원 등 10인",
+      "date": "2026-11-13",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2222555",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "이학영의원 등 10인",
+      "date": "2026-11-06",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2221642",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "문대림의원 등 11인",
+      "date": "2026-09-29",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2221583",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "김성범의원 등 10인",
+      "date": "2026-09-28",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2220630",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "이재정의원 등 10인",
+      "date": "2026-08-19",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2220553",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "김성범의원 등 11인",
+      "date": "2026-08-12",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2219514",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "문대림의원 등 10인",
+      "date": "2026-06-25",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2218132",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "문대림의원 등 10인",
+      "date": "2026-04-06",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2217447",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 14인",
+      "date": "2026-03-13",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2217410",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "김한규의원 등 16인",
+      "date": "2026-03-12",
+      "status": "대안반영폐기",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2217324",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "김한규의원 등 16인",
+      "date": "2026-03-09",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "김한규의원 등 22인",
+      "date": "2026-03-04",
+      "status": "대안반영폐기",
+      "committee": "정치개혁특별위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2216750",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 17인",
+      "date": "2026-02-11",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "김한규의원 등 13인",
+      "date": "2026-01-15",
+      "status": "대안반영폐기",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2214954",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "조계원의원 등 10인",
+      "date": "2025-12-05",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "정춘생의원 등 10인",
+      "date": "2025-11-05",
+      "status": "대안반영폐기",
+      "committee": "정치개혁특별위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2213827",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 12인",
+      "date": "2025-10-31",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2213814",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 13인",
+      "date": "2025-10-30",
+      "status": "대안반영폐기",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2213781",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 10인",
+      "date": "2025-10-29",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2211840",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 11인",
+      "date": "2025-07-30",
+      "status": "대안반영폐기",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2210719",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "문대림의원 등 10인",
+      "date": "2025-06-11",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2209705",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 10인",
+      "date": "2025-04-10",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 10인",
+      "date": "2025-01-09",
+      "status": "대안반영폐기",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2207167",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 10인",
+      "date": "2024-12-31",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2203108",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "김용태의원 등 12인",
+      "date": "2024-08-23",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    },
+    {
+      "number": "2200931",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 12인",
+      "date": "2024-06-25",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/main.do"
+    }
+  ],
   "law": null,
   "events": [],
   "sources": {
     "assembly": {
-      "status": "인증키 미설정",
-      "checked_at": "2026-11-17 14:45 KST"
+      "status": "정상",
+      "checked_at": "2026-11-17 18:42 KST"
     },
     "law": {
-      "status": "인증키 미설정",
-      "checked_at": "2026-11-17 14:45 KST"
+      "status": "조회 오류",
+      "checked_at": "2026-11-17 18:42 KST"
     }
   }
 }
