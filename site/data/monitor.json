@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-17 19:42 KST",
+  "checked_at": "2026-11-17 20:30 KST",
   "bills": [
     {
       "number": "2222797",
@@ -241,11 +241,11 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-17 19:42 KST"
+      "checked_at": "2026-11-17 20:30 KST"
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-17 19:42 KST"
+      "checked_at": "2026-11-17 20:30 KST"
     }
   }
 }
