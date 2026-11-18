@@ -17,7 +17,7 @@
   <main class="page">
     <section id="notice" class="notice" role="status">국회·법제처 공식 API 기반 입법정보 서비스입니다. 연결 상태 확인 중</section>
     <section class="stats" aria-label="입법동향 요약">
-      <div class="stat"><strong id="count-bills">–</strong><span>수집된 관련 의안</span></div>
+      <div class="stat"><strong id="count-bills">–</strong><span>수집된 관련 의안</span><small id="bill-breakdown" class="stat-note">제안주체별 건수 확인 중</small></div>
       <div class="stat"><strong id="count-pending">–</strong><span>입법 진행 중</span><small id="pending-breakdown" class="stat-note">국회 계류·공포 전</small></div>
       <div class="stat"><strong id="count-completed">–</strong><span>처리 완료</span></div>
     </section>
@@ -43,7 +43,7 @@
       <p class="fine">공포 완료(관련 대안 공포 확인 포함), 대안반영 후 공포 확인 전, 철회·부결·폐기 등을 세부 구분합니다. <b>대안반영폐기 원안과 그 대안 법률의 공포는 서로 다른 기록</b>이며 공포 연결이 검증된 경우에만 '공포 확인'으로 분류합니다.</p>
       <div class="completion-breakdown" id="completion-breakdown-inline">확인 중</div>
       <div id="completed-groups" class="stage-groups"><div class="empty">조회 중</div></div>
-      <p class="fine">※ 현 버전의 수집 기본 범위는 <b>제22대 국회의 의원발의 법률안</b>입니다. 정부제출안·위원회 대안 및 법률 공포와 의안의 1:1 연결은 추가 검증·연계가 필요합니다. 상세 심사 및 회의기록은 해당 국회 API에서 실제 반환된 항목만 표시합니다. 개별 원문·검토보고서·심사보고서의 제공 여부는 해당 의안 상세페이지에서 확인하세요.</p>
+      <p class="fine">※ 제22대 국회 의원발의안과 통합 의안검색으로 확인되는 정부제출안·위원회 대안을 수록합니다. 대안과 원안의 관계는 공식 참조식별자가 맞거나 별도 검증된 경우만 연결하고, <b>미연결 의안은 미확인으로 표시</b>합니다. 법률 공포일·번호가 확인되었을 때만 공포 완료로 분류합니다. 모든 연계가 확인되었다는 의미는 아닙니다. 원문·검토보고서·심사보고서 제공 여부는 해당 의안 상세페이지에서 확인하세요.</p>
     </section>
     <section class="section" id="law">
       <div class="section-head"><div><div class="eyebrow dark">OFFICIAL LAW</div><h2>현행 제주특별법</h2></div><a class="soft-link" href="https://www.law.go.kr/법령/제주특별자치도설치및국제자유도시조성을위한특별법" rel="noopener noreferrer" target="_blank">국가법령정보센터 ↗</a></div>

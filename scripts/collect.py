@@ -21,6 +21,9 @@ from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 from zoneinfo import ZoneInfo
 
+from alternatives import (normalize_integrated_row, merge_integrated_bills,
+                          link_by_explicit_reference, is_alternative, absorbed, as_references, REFERENCE_KEYS)
+
 PATH = Path(__file__).resolve().parents[1] / "site" / "data" / "monitor.json"
 TITLE = "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법"
 KST = ZoneInfo("Asia/Seoul")
@@ -124,6 +127,13 @@ def get_assembly(key):
     if not items:
         raise ValueError('국회 검색 응답에서 제주특별법 의안을 찾지 못함')
     return sorted({b['number']: b for b in items}.values(), key=lambda b: (b['date'], b['number']), reverse=True)
+
+
+def get_integrated_assembly(key):
+    """의원·정부·위원장안 통합 검색. API 항목 미지원이면 메인 수집으로 대체."""
+    rows = assembly_query(key, 'TVBPMBILL11', {'AGE': 22, 'BILL_NAME': TITLE}, 2500)
+    output = [normalize_integrated_row(x, detail_link) for x in rows]
+    return [x for x in output if x is not None]
 
 
 def date_value(row, *keys):
@@ -313,10 +323,7 @@ def append_verified_alternative_bills(bills, mappings):
 
 
 def apply_verified_alternatives(bills, mappings):
-    """원안→대안 연결은 검증된 출처가 등록된 경우에만 승인.
-
-    자동으로 법률명·공포일이 비슷하다는 이유로 다른 의안을 연결하지 않는다.
-    """
+    """확인된 원안→대안 연결을 공포 전부터 표시. 공포 여부는 별도로 확인."""
     count = 0
     links = mappings.get('links') or {}
     for bill in bills:
@@ -329,16 +336,18 @@ def apply_verified_alternatives(bills, mappings):
             continue
         alt_no = str(entry.get('alternative_bill_no') or '').strip()
         target = (mappings.get('alternatives') or {}).get(alt_no) or {}
-        published = str(target.get('promulgation_date') or entry.get('promulgation_date') or '').strip()
         evidence = str(target.get('evidence_url') or entry.get('evidence_url') or '').strip()
-        if not (alt_no.isdigit() and re_date(published) and official_evidence(evidence)):
+        if not (re.fullmatch(r'22\d{5}', alt_no) and target.get('verified') and official_evidence(evidence)):
             continue
+        published = str(target.get('promulgation_date') or '').strip()
+        law_no = str(target.get('law_number') or '') if re_date(published) else ''
         bill['related_alternative'] = {
             'number': alt_no,
-            'promulgation_date': published,
-            'law_number': str(target.get('law_number') or entry.get('law_number') or ''),
+            'promulgation_date': published if re_date(published) and law_no.isdigit() else '',
+            'law_number': law_no if re_date(published) and law_no.isdigit() else '',
             'evidence_url': evidence,
             'relationship_evidence_url': str(entry.get('relationship_evidence_url') or ''),
+            'relationship_method': str(entry.get('relationship_method') or 'verified_source'),
             'plenary_date': str(target.get('plenary_date') or ''),
             'gov_transfer_date': str(target.get('gov_transfer_date') or ''),
             'note': str(entry.get('note') or '')[:250],
@@ -366,7 +375,8 @@ def classify_bill(bill):
             return {'group':'completed', 'completion_kind':'promulgated', 'stage':'관련 대안 공포 확인',
                     'rank': 200, 'promulgation_date': confirmed_alt['promulgation_date']}
         return {'group':'completed', 'completion_kind':'alternative_unverified',
-                'stage':'대안반영(관련 대안 확인 필요)', 'rank': 100, 'promulgation_date':''}
+                'stage':'대안 연결 확인·공포 미확인' if confirmed_alt.get('number') else '대안반영(관련 대안 확인 필요)',
+                'rank': 100, 'promulgation_date':''}
     promulgation = dt('PROMULGATION_DT') or dt('PROMUL_DT') or dt('PROM_DT')
     if promulgation or ('공포' in clean and '공포전' not in clean and '공포전' not in status):
         return {'group':'completed', 'completion_kind':'promulgated', 'stage':'공포 확인',
@@ -426,12 +436,13 @@ def enrich_bills(key, bills, old_bills):
         if not bill.get('url'):
             bill['url'] = detail_link(bill.get('bill_id') or old.get('bill_id'), old.get('url'))
         if r.get('details_ok'):
-            bill['details'] = r['details']
+            bill['details'] = {**(old.get('details') or {}), **(bill.get('details') or {}),
+                               **{k:v for k,v in r['details'].items() if v}}
             bill['details_ok'] = True
             details_count += 1
         else:
-            bill['details'] = old.get('details') or {}
-            bill['details_ok'] = False
+            bill['details'] = bill.get('details') or old.get('details') or {}
+            bill['details_ok'] = bool(bill.get('details'))
         if r.get('meetings_ok'):
             bill['meetings'] = r.get('meetings') or []
             bill['meetings_ok'] = True
@@ -598,7 +609,7 @@ def get_law(oc):
 
 def detect_events(old, bills, law, assembly_ok, law_ok, ts):
     changes = []
-    if assembly_ok and old.get('sources', {}).get('assembly', {}).get('status') == '정상':
+    if assembly_ok and old.get('sources', {}).get('assembly', {}).get('status') in ('정상', '일부 확인'):
         prev = {b['number']: b for b in old.get('bills', [])}
         for bill in bills:
             before = prev.get(bill['number'])
@@ -614,11 +625,17 @@ def detect_events(old, bills, law, assembly_ok, law_ok, ts):
                 changes.append({'kind': '심사단계 변경', 'number': bill['number'], 'title': bill['title'],
                     'message': f"의안번호 {bill['number']} · {before.get('stage')} → {bill.get('stage')}",
                     'detected': ts, 'url': bill['url']})
-            if before and before.get('related_alternative') != bill.get('related_alternative') and bill.get('related_alternative'):
+            if (before and bill.get('related_alternative') and
+                tuple((before.get('related_alternative') or {}).get(k) for k in ('number','promulgation_date','law_number')) !=
+                tuple(bill['related_alternative'].get(k) for k in ('number','promulgation_date','law_number'))):
                 linked = bill['related_alternative']
-                changes.append({'kind': '대안 공포 연결 확인', 'number': bill['number'], 'title': bill['title'],
-                    'message': f"원안 {bill['number']} → 관련 대안 {linked['number']} · 공포일 {linked['promulgation_date']} · 공포 근거 확인",
-                    'detected': ts, 'url': linked['evidence_url']})
+                is_published = bool(linked.get('promulgation_date') and linked.get('law_number'))
+                kind = '관련 대안 공포 확인' if is_published else '관련 대안 자동 연결'
+                msg = (f"원안 {bill['number']} → 대안 {linked['number']} · 법률 제{linked['law_number']}호 · {linked['promulgation_date']} 공포 확인"
+                       if is_published else f"원안 {bill['number']} → 대안 {linked['number']} 식별자 연결 확인 · 공포 여부 추가 확인 중")
+                changes.append({'kind': kind, 'number': bill['number'], 'title': bill['title'],
+                    'message': msg, 'detected': ts, 'url': linked['evidence_url'],
+                    'related_bill_numbers': [bill['number'], linked['number']]})
             if before and before.get('meetings_ok') and bill.get('meetings_ok'):
                 before_keys = {(m.get('date'), m.get('name'), m.get('result')) for m in before.get('meetings', [])}
                 for m in bill.get('meetings', []):
@@ -637,6 +654,100 @@ def detect_events(old, bills, law, assembly_ok, law_ok, ts):
     return changes
 
 
+def enrich_reference_ids(key, bills, old_bills, ts, max_queries=8):
+    """상세 API에서 직접 참조식별자를 보완. 실패 시 과거 참조 보존.
+
+    이미 참조를 받은 의안은 반복조회하지 않는다. 미발견 의안은 24시간마다 재시도.
+    """
+    prev = {str(b.get('number')): b for b in old_bills}
+    pending = []
+    def should_retry(checked):
+        if not checked:
+            return True
+        try:
+            moment = datetime.strptime(str(checked)[:16], '%Y-%m-%d %H:%M')
+            return (datetime.now(KST).replace(tzinfo=None) - moment).total_seconds() >= 86400
+        except ValueError:
+            return True
+
+    for b in bills:
+        before = prev.get(str(b.get('number'))) or {}
+        b['ref_ids'] = sorted(set((b.get('ref_ids') or []) + (before.get('ref_ids') or [])))
+        b['reference_checked_at'] = before.get('reference_checked_at') or ''
+        if not (absorbed(b) or is_alternative(b)) or b['ref_ids']:
+            continue
+        if not valid_bill_id(b.get('bill_id')) or not should_retry(b.get('reference_checked_at')):
+            continue
+        pending.append(b)
+    stats = {'candidates':len(pending), 'queried':0, 'references_found':0, 'errors':0,
+             'query_cap':max_queries}
+    if not pending:
+        return stats
+
+    def inspect(b):
+        try:
+            rows = assembly_query(key, 'BILLINFODETAIL', {'BILL_ID': b['bill_id']}, 100)
+            matching = [r for r in rows if str(r.get('BILL_ID') or '') == str(b['bill_id'])]
+            refs = sorted(set(x for row in matching for col in REFERENCE_KEYS
+                              for x in as_references(row.get(col))))
+            return (b['number'], refs, '')
+        except Exception as exc:
+            return (b['number'], [], type(exc).__name__)
+
+    selected = pending[:max_queries]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        reports = list(pool.map(inspect, selected))
+    got = {number:(refs,error) for number,refs,error in reports}
+    for b in selected:
+        refs,error=got[b['number']]
+        stats['queried'] += 1
+        b['reference_checked_at'] = ts
+        if error:
+            stats['errors'] += 1
+        elif refs:
+            b['ref_ids'] = sorted(set(b.get('ref_ids',[]) + refs))
+            stats['references_found'] += len(refs)
+    return stats
+
+
+def combine_alternatives(bills, seed, old, discovery_complete=False):
+    """공식 API 참조식별자를 우선, 기존 공식확인 기록은 항상 보존한다."""
+    mappings = {'description': '국회 공식 직접 참조 + 기존 검증 사례',
+                'links': dict(seed.get('links') or {}),
+                'alternatives': dict(seed.get('alternatives') or {})}
+    archived = old.get('automatic_alternative_links') or {}
+    fresh, ambiguous = link_by_explicit_reference(bills) if discovery_complete else ({}, [])
+    auto_links = dict(archived)
+    auto_links.update(fresh)
+    for original_no, link in auto_links.items():
+        # 기존의 공식 확인 수기 기록이 우선. 중복 등록 방지.
+        if original_no not in mappings['links']:
+            mappings['links'][original_no] = dict(link)
+    for bill in bills:
+        if not is_alternative(bill):
+            continue
+        no = str(bill['number'])
+        if no not in mappings['alternatives']:
+            mappings['alternatives'][no] = {
+                'title': bill['title'], 'date': bill.get('date') or '',
+                'proposer': bill.get('proposer') or '위원장',
+                'committee': bill.get('committee') or '',
+                'status': bill.get('status') or '미처리',
+                'plenary_date': (bill.get('details') or {}).get('PROC_DT') or '',
+                'promulgation_date': '', 'law_number': '', 'verified': True,
+                'evidence_url': official_alternative_url(no),
+                'source': 'official_assembly_integrated_api',
+            }
+    unresolved = [str(b['number']) for b in bills if
+                  any(mark.replace(' ', '') in str(b.get('status') or '').replace(' ', '') for mark in ALT_MARKERS)
+                  and str(b['number']) not in mappings['links']]
+    return mappings, auto_links, {'discovered_direct_links':len(fresh),
+                                 'persisted_auto_links':len(auto_links),
+                                 'ambiguous_originals':ambiguous,
+                                 'unresolved_originals':unresolved,
+                                 'tracked_alternatives':len(mappings['alternatives'])}
+
+
 def main():
     old = json.loads(PATH.read_text(encoding='utf-8')) if PATH.exists() else {}
     ts = now()
@@ -646,18 +757,38 @@ def main():
     schedules = old.get('committee_schedules', [])
     ak, oc = os.getenv('ASSEMBLY_API_KEY', '').strip(), os.getenv('LAW_OC', '').strip()
     coverage = {'details': 0, 'meetings': 0, 'total': len(bills)}
+    integrated_ok = False
+    reference_stats = {}
+    discovery_message = '인증키 미설정'
     if not ak:
         sources['assembly'] = {'status': '인증키 미설정', 'checked_at': ts}
     else:
+        members, integrated = None, None
         try:
-            new_bills = get_assembly(ak)
-            coverage = enrich_bills(ak, new_bills, bills)
-            bills = new_bills
-            assembly_ok = True
-            sources['assembly'] = {'status': '정상', 'checked_at': ts}
+            members = get_assembly(ak)
         except Exception as exc:
+            print('MEMBER BILL API ERROR', type(exc).__name__, str(exc), file=sys.stderr)
+        try:
+            integrated = get_integrated_assembly(ak)
+            integrated_ok = bool(integrated)
+            discovery_message = '정상' if integrated_ok else '검색결과 없음'
+        except Exception as exc:
+            discovery_message = '조회 오류: ' + type(exc).__name__
+            print('INTEGRATED BILL API ERROR', type(exc).__name__, str(exc), file=sys.stderr)
+        if members is not None or integrated_ok:
+            new_bills, additions = merge_integrated_bills(members or [], integrated or [])
+            if new_bills:
+                coverage = enrich_bills(ak, new_bills, bills)
+                reference_stats = enrich_reference_ids(ak, new_bills, bills, ts)
+                bills = new_bills
+                assembly_ok = True
+                sources['assembly'] = {'status': '정상' if members is not None and integrated_ok else '일부 확인',
+                                       'checked_at': ts, 'integrated_additions': additions}
+            else:
+                sources['assembly'] = {'status': '조회 오류', 'checked_at': ts}
+        else:
             sources['assembly'] = {'status': '조회 오류', 'checked_at': ts}
-            print('ASSEMBLY ERROR', type(exc).__name__, str(exc), file=sys.stderr)
+    sources['integrated_bills'] = {'status': discovery_message, 'checked_at': ts}
     if assembly_ok:
         try:
             new_schedules, schedule_errors, schedule_queries = get_committee_schedules(ak, bills)
@@ -690,17 +821,21 @@ def main():
         except Exception as exc:
             sources['law'] = {'status': '조회 오류', 'checked_at': ts}
             print('LAW ERROR', type(exc).__name__, str(exc), file=sys.stderr)
-    # 공식 자료로 대안 의안번호·공포일 연결을 확인한 사례만 결과로 인정.
+    # 국회 통합 의안검색에서 위원장안도 자동 발견.
+    # 원안-대안 관계는 해당 API의 직접 참조 식별자가 실제 양쪽 의안에 매칭될 때에만 확정.
     try:
-        manual_links = json.loads(LINK_PATH.read_text(encoding='utf-8')) if LINK_PATH.exists() else {'links': {}}
+        manual_links = json.loads(LINK_PATH.read_text(encoding='utf-8')) if LINK_PATH.exists() else {'links': {}, 'alternatives': {}}
     except (ValueError, OSError) as exc:
         print('ALTERNATIVE LINK FILE ERROR', type(exc).__name__, str(exc), file=sys.stderr)
-        manual_links = {'links': {}}
-    alternative_status = refresh_verified_alternatives(manual_links)
-    bills = append_verified_alternative_bills(bills, manual_links)
-    confirmed_links = apply_verified_alternatives(bills, manual_links)
-    sources['alternatives'] = {'status': '공포이력 공식 확인', 'checked_at': ts, 'details': alternative_status,
-                               'linked': confirmed_links, 'note':'기등록된 관계만 자동 추적; 신규 원안-대안 관계 발견은 미구현'}
+        manual_links = {'links': {}, 'alternatives': {}}
+    mappings, auto_links, auto_stats = combine_alternatives(bills, manual_links, old, discovery_complete=integrated_ok)
+    alternative_status = refresh_verified_alternatives(mappings)
+    bills = append_verified_alternative_bills(bills, mappings)
+    confirmed_links = apply_verified_alternatives(bills, mappings)
+    sources['alternatives'] = {'status': '공식 API 자동 탐색' if integrated_ok else '기존 검증 기록 유지(통합 API 미확인)',
+                               'checked_at': ts, 'details': alternative_status,
+                               'linked': confirmed_links, 'detail_reference_scan':reference_stats, **auto_stats,
+                               'note':'의원안·정부안·위원회 대안 자동 탐색. 원안-대안은 공식 직접 참조식별자가 있는 경우만 연결. 미확인 관계는 임의 추정하지 않음.'}
     for b in bills:
         b.update(classify_bill(b))
     events = detect_events(old, bills, law, assembly_ok, law_ok, ts)
@@ -717,7 +852,8 @@ def main():
     sources['detail'] = source_detail
     new = {'checked_at': ts, 'bills': bills, 'law': law, 'events': history, 'sources': sources,
            'committee_schedules': schedules,
-           'scope': '22대 의원발의안 중심 + 공개자료로 검증된 위원회 대안 별도 수록. 대안 연결은 사전 검증된 관계를 유지하며 공식 페이지에서 공포일·법률번호를 재확인. 신규 위원회 대안 및 정부안 전체 자동발견은 추가 개발 필요.',
+           'scope': '22대 의원발의법률안 + 국회 통합 의안검색에서 확인된 정부안·위원장 대안. 원안-대안 관계는 공식 API 참조식별자 직접일치 및 기등록 검증 사례만 사용. 관계 미확인 원안은 별도 관리. 공포는 법제처 공식 의안 상세에서 날짜/법률번호 확인 시에만 표시.',
+           'automatic_alternative_links': auto_links,
            'recent_days': 30}
     PATH.parent.mkdir(parents=True, exist_ok=True)
     PATH.write_text(json.dumps(new, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
