@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-18 15:19 KST",
+  "checked_at": "2026-11-18 15:52 KST",
   "bills": [
     {
       "number": "2222797",
@@ -569,10 +569,20 @@
       ],
       "meetings_ok": true,
       "group": "completed",
-      "completion_kind": "alternative_unverified",
-      "stage": "대안반영(공포 연계 확인 전)",
-      "rank": 100,
-      "promulgation_date": ""
+      "completion_kind": "promulgated",
+      "stage": "관련 대안 공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-06-02",
+      "related_alternative": {
+        "number": "2218559",
+        "promulgation_date": "2026-06-02",
+        "law_number": "21735",
+        "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "plenary_date": "2026-05-07",
+        "gov_transfer_date": "2026-05-22",
+        "note": ""
+      }
     },
     {
       "number": "2217324",
@@ -725,10 +735,20 @@
       ],
       "meetings_ok": true,
       "group": "completed",
-      "completion_kind": "alternative_unverified",
-      "stage": "대안반영(공포 연계 확인 전)",
-      "rank": 100,
-      "promulgation_date": ""
+      "completion_kind": "promulgated",
+      "stage": "관련 대안 공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-04-22",
+      "related_alternative": {
+        "number": "2218430",
+        "promulgation_date": "2026-04-22",
+        "law_number": "21576",
+        "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+        "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+        "plenary_date": "2026-04-18",
+        "gov_transfer_date": "2026-04-20",
+        "note": ""
+      }
     },
     {
       "number": "2216750",
@@ -887,10 +907,20 @@
       ],
       "meetings_ok": true,
       "group": "completed",
-      "completion_kind": "alternative_unverified",
-      "stage": "대안반영(공포 연계 확인 전)",
-      "rank": 100,
-      "promulgation_date": ""
+      "completion_kind": "promulgated",
+      "stage": "관련 대안 공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-06-02",
+      "related_alternative": {
+        "number": "2218559",
+        "promulgation_date": "2026-06-02",
+        "law_number": "21735",
+        "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "plenary_date": "2026-05-07",
+        "gov_transfer_date": "2026-05-22",
+        "note": ""
+      }
     },
     {
       "number": "2214954",
@@ -1043,10 +1073,20 @@
       ],
       "meetings_ok": true,
       "group": "completed",
-      "completion_kind": "alternative_unverified",
-      "stage": "대안반영(공포 연계 확인 전)",
-      "rank": 100,
-      "promulgation_date": ""
+      "completion_kind": "promulgated",
+      "stage": "관련 대안 공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-04-22",
+      "related_alternative": {
+        "number": "2218430",
+        "promulgation_date": "2026-04-22",
+        "law_number": "21576",
+        "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+        "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+        "plenary_date": "2026-04-18",
+        "gov_transfer_date": "2026-04-20",
+        "note": ""
+      }
     },
     {
       "number": "2213827",
@@ -1205,10 +1245,20 @@
       ],
       "meetings_ok": true,
       "group": "completed",
-      "completion_kind": "alternative_unverified",
-      "stage": "대안반영(공포 연계 확인 전)",
-      "rank": 100,
-      "promulgation_date": ""
+      "completion_kind": "promulgated",
+      "stage": "관련 대안 공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-06-02",
+      "related_alternative": {
+        "number": "2218559",
+        "promulgation_date": "2026-06-02",
+        "law_number": "21735",
+        "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "plenary_date": "2026-05-07",
+        "gov_transfer_date": "2026-05-22",
+        "note": ""
+      }
     },
     {
       "number": "2213781",
@@ -1379,10 +1429,20 @@
       ],
       "meetings_ok": true,
       "group": "completed",
-      "completion_kind": "alternative_unverified",
-      "stage": "대안반영(공포 연계 확인 전)",
-      "rank": 100,
-      "promulgation_date": ""
+      "completion_kind": "promulgated",
+      "stage": "관련 대안 공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-06-02",
+      "related_alternative": {
+        "number": "2218559",
+        "promulgation_date": "2026-06-02",
+        "law_number": "21735",
+        "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "plenary_date": "2026-05-07",
+        "gov_transfer_date": "2026-05-22",
+        "note": ""
+      }
     },
     {
       "number": "2210719",
@@ -1691,10 +1751,20 @@
       ],
       "meetings_ok": true,
       "group": "completed",
-      "completion_kind": "alternative_unverified",
-      "stage": "대안반영(공포 연계 확인 전)",
-      "rank": 100,
-      "promulgation_date": ""
+      "completion_kind": "promulgated",
+      "stage": "관련 대안 공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-06-02",
+      "related_alternative": {
+        "number": "2218559",
+        "promulgation_date": "2026-06-02",
+        "law_number": "21735",
+        "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2207389/detailRP",
+        "plenary_date": "2026-05-07",
+        "gov_transfer_date": "2026-05-22",
+        "note": ""
+      }
     },
     {
       "number": "2207167",
@@ -1965,34 +2035,229 @@
       "stage": "소관위 심사",
       "rank": 57,
       "promulgation_date": ""
+    },
+    {
+      "number": "2218559",
+      "bill_id": "",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "date": "2026-04-22",
+      "proposer": "행정안전위원장",
+      "committee": "행정안전위원회",
+      "status": "원안가결",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+      "official_alternative": true,
+      "details_ok": false,
+      "meetings_ok": false,
+      "meetings": [],
+      "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+      "law_number": "21735",
+      "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+      "details": {
+        "PROMULGATION_DT": "2026-06-02",
+        "PROC_DT": "2026-05-07",
+        "PROC_RESULT_CD": "원안가결",
+        "GOV_SUBMIT_DT": "2026-05-22"
+      },
+      "group": "completed",
+      "completion_kind": "promulgated",
+      "stage": "공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-06-02"
+    },
+    {
+      "number": "2218430",
+      "bill_id": "",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "date": "2026-04-18",
+      "proposer": "정치개혁특별위원장",
+      "committee": "정치개혁특별위원회",
+      "status": "원안가결",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+      "official_alternative": true,
+      "details_ok": false,
+      "meetings_ok": false,
+      "meetings": [],
+      "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+      "law_number": "21576",
+      "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+      "details": {
+        "PROMULGATION_DT": "2026-04-22",
+        "PROC_DT": "2026-04-18",
+        "PROC_RESULT_CD": "원안가결",
+        "GOV_SUBMIT_DT": "2026-04-20"
+      },
+      "group": "completed",
+      "completion_kind": "promulgated",
+      "stage": "공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-04-22"
     }
   ],
   "law": null,
-  "events": [],
+  "events": [
+    {
+      "kind": "심사단계 변경",
+      "number": "2217410",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2217410 · 대안반영(공포 연계 확인 전) → 관련 대안 공포 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z6X0Y3F1G1F1D6D0C8C3Y5Y6X0Y8"
+    },
+    {
+      "kind": "대안 공포 연결 확인",
+      "number": "2217410",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "원안 2217410 → 관련 대안 2218559 · 공포일 2026-06-02 · 공포 근거 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    {
+      "kind": "심사단계 변경",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2217211 · 대안반영(공포 연계 확인 전) → 관련 대안 공포 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3"
+    },
+    {
+      "kind": "대안 공포 연결 확인",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "원안 2217211 → 관련 대안 2218430 · 공포일 2026-04-22 · 공포 근거 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"
+    },
+    {
+      "kind": "심사단계 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2216064 · 대안반영(공포 연계 확인 전) → 관련 대안 공포 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "대안 공포 연결 확인",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "원안 2216064 → 관련 대안 2218559 · 공포일 2026-06-02 · 공포 근거 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    {
+      "kind": "심사단계 변경",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2213920 · 대안반영(공포 연계 확인 전) → 관련 대안 공포 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9"
+    },
+    {
+      "kind": "대안 공포 연결 확인",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "원안 2213920 → 관련 대안 2218430 · 공포일 2026-04-22 · 공포 근거 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"
+    },
+    {
+      "kind": "심사단계 변경",
+      "number": "2213814",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2213814 · 대안반영(공포 연계 확인 전) → 관련 대안 공포 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2R5R0Z8A2Y9Z1Y4W1W4E2F2D3C4C7"
+    },
+    {
+      "kind": "대안 공포 연결 확인",
+      "number": "2213814",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "원안 2213814 → 관련 대안 2218559 · 공포일 2026-06-02 · 공포 근거 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    {
+      "kind": "심사단계 변경",
+      "number": "2211840",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2211840 · 대안반영(공포 연계 확인 전) → 관련 대안 공포 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5"
+    },
+    {
+      "kind": "대안 공포 연결 확인",
+      "number": "2211840",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "원안 2211840 → 관련 대안 2218559 · 공포일 2026-06-02 · 공포 근거 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    {
+      "kind": "심사단계 변경",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2207389 · 대안반영(공포 연계 확인 전) → 관련 대안 공포 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "대안 공포 연결 확인",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "원안 2207389 → 관련 대안 2218559 · 공포일 2026-06-02 · 공포 근거 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    {
+      "kind": "신규 의안",
+      "number": "2218559",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "message": "의안번호 2218559 · 행정안전위원장 · 2026-04-22 접수 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    {
+      "kind": "신규 의안",
+      "number": "2218430",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "message": "의안번호 2218430 · 정치개혁특별위원장 · 2026-04-18 접수 확인",
+      "detected": "2026-11-18 15:52 KST",
+      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"
+    }
+  ],
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-18 15:19 KST"
+      "checked_at": "2026-11-18 15:52 KST"
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-18 15:19 KST"
+      "checked_at": "2026-11-18 15:52 KST"
     },
     "schedule": {
       "status": "일부 확인",
-      "checked_at": "2026-11-18 15:19 KST",
+      "checked_at": "2026-11-18 15:52 KST",
       "queries": 4,
       "errors": 4
     },
     "detail": {
       "status": "정상",
-      "checked_at": "2026-11-18 15:19 KST",
+      "checked_at": "2026-11-18 15:52 KST",
       "details": 26,
       "meetings": 23,
       "total": 26
+    },
+    "alternatives": {
+      "status": "공포이력 공식 확인",
+      "checked_at": "2026-11-18 15:52 KST",
+      "details": {
+        "2218559": "공식 페이지 재확인",
+        "2218430": "공식 페이지 재확인"
+      },
+      "linked": 7,
+      "note": "기등록된 관계만 자동 추적; 신규 원안-대안 관계 발견은 미구현"
     }
   },
   "committee_schedules": [],
-  "scope": "22대 의원발의안 중심; 의안별 상세 링크는 국회 내부 의안ID 확인된 건만 표시; 단계별 심사/회의 기록은 확인분만 표시. 정부안·위원회안 수집은 추가 개발 필요.",
+  "scope": "22대 의원발의안 중심 + 공개자료로 검증된 위원회 대안 별도 수록. 대안 연결은 사전 검증된 관계를 유지하며 공식 페이지에서 공포일·법률번호를 재확인. 신규 위원회 대안 및 정부안 전체 자동발견은 추가 개발 필요.",
   "recent_days": 30
 }
