@@ -1,239 +1,1970 @@
 {
-  "checked_at": "2026-11-18 14:13 KST",
+  "checked_at": "2026-11-18 14:38 KST",
   "bills": [
     {
       "number": "2222797",
+      "bill_id": "PRC_EF4A658CA79B4A509DC96D3AD6B886",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "송언석의원 등 10인",
       "date": "2026-11-13",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_EF4A658CA79B4A509DC96D3AD6B886",
+      "details": {
+        "COMMITTEE_DT": "2026-11-16",
+        "CMT_PRESENT_DT": "",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [],
+      "meetings_ok": false,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 접수",
+      "rank": 45,
+      "promulgation_date": ""
     },
     {
       "number": "2222555",
+      "bill_id": "PRC_8FD369AFF48F48479E0D90509AAD91",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "이학영의원 등 10인",
       "date": "2026-11-06",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_8FD369AFF48F48479E0D90509AAD91",
+      "details": {
+        "COMMITTEE_DT": "2026-11-09",
+        "CMT_PRESENT_DT": "",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [],
+      "meetings_ok": false,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 접수",
+      "rank": 45,
+      "promulgation_date": ""
     },
     {
       "number": "2221642",
+      "bill_id": "PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "문대림의원 등 11인",
       "date": "2026-09-29",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7",
+      "details": {
+        "COMMITTEE_DT": "2026-09-30",
+        "CMT_PRESENT_DT": "2026-11-16",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-17",
+          "name": "제439회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-17",
+          "name": "제439회 국회(정기회) 제3차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-17",
+          "name": "제439회 국회(정기회) 제3차 소위회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2221583",
+      "bill_id": "PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "김성범의원 등 10인",
       "date": "2026-09-28",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0",
+      "details": {
+        "COMMITTEE_DT": "2026-09-29",
+        "CMT_PRESENT_DT": "2026-11-16",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-17",
+          "name": "제439회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-17",
+          "name": "제439회 국회(정기회) 제3차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-17",
+          "name": "제439회 국회(정기회) 제3차 소위회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2220630",
+      "bill_id": "PRC_J2I6J0H7H2Q7Q1O3P5O2M2M2U9V2T1",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "이재정의원 등 10인",
       "date": "2026-08-19",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2I6J0H7H2Q7Q1O3P5O2M2M2U9V2T1",
+      "details": {
+        "COMMITTEE_DT": "2026-08-20",
+        "CMT_PRESENT_DT": "",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [],
+      "meetings_ok": false,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 접수",
+      "rank": 45,
+      "promulgation_date": ""
     },
     {
       "number": "2220553",
+      "bill_id": "PRC_H2G6G0E8D0D3L1M6K3L1J4I6I5Q4R5",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "김성범의원 등 11인",
       "date": "2026-08-12",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G6G0E8D0D3L1M6K3L1J4I6I5Q4R5",
+      "details": {
+        "COMMITTEE_DT": "2026-08-13",
+        "CMT_PRESENT_DT": "2026-11-16",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2219514",
+      "bill_id": "PRC_U2S6R0Z6A2Z5X1V3E1D3D1C7A7X3V2",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "문대림의원 등 10인",
       "date": "2026-06-25",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2S6R0Z6A2Z5X1V3E1D3D1C7A7X3V2",
+      "details": {
+        "COMMITTEE_DT": "2026-07-01",
+        "CMT_PRESENT_DT": "2026-11-16",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-11-16",
+          "name": "제439회 국회(정기회) 제11차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2218132",
+      "bill_id": "PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "문대림의원 등 10인",
       "date": "2026-04-06",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1",
+      "details": {
+        "COMMITTEE_DT": "2026-04-07",
+        "CMT_PRESENT_DT": "2026-08-24",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2217447",
+      "bill_id": "PRC_B2C6A0B3Z0X4Y1G3G3E1G0E3E1C5D3",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 14인",
       "date": "2026-03-13",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_B2C6A0B3Z0X4Y1G3G3E1G0E3E1C5D3",
+      "details": {
+        "COMMITTEE_DT": "2026-03-16",
+        "CMT_PRESENT_DT": "",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 접수",
+      "rank": 45,
+      "promulgation_date": ""
     },
     {
       "number": "2217410",
+      "bill_id": "PRC_Y2Z6X0Y3F1G1F1D6D0C8C3Y5Y6X0Y8",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "김한규의원 등 16인",
       "date": "2026-03-12",
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z6X0Y3F1G1F1D6D0C8C3Y5Y6X0Y8",
+      "details": {
+        "COMMITTEE_DT": "2026-03-13",
+        "CMT_PRESENT_DT": "2026-03-26",
+        "CMT_PROC_DT": "2026-03-26",
+        "CMT_PROC_RESULT_CD": "대안반영폐기",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "2026-05-07",
+        "PROC_RESULT_CD": "대안반영폐기",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "alternative_unverified",
+      "stage": "대안반영(공포 연계 확인 전)",
+      "rank": 100,
+      "promulgation_date": ""
     },
     {
       "number": "2217324",
+      "bill_id": "PRC_A2Y6Z0X3W0W6S1T4R5Q1Q0O4P3X0V1",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "김한규의원 등 16인",
       "date": "2026-03-09",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2Y6Z0X3W0W6S1T4R5Q1Q0O4P3X0V1",
+      "details": {
+        "COMMITTEE_DT": "2026-03-10",
+        "CMT_PRESENT_DT": "2026-08-24",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2217211",
+      "bill_id": "PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "김한규의원 등 22인",
       "date": "2026-03-04",
       "status": "대안반영폐기",
       "committee": "정치개혁특별위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3",
+      "details": {
+        "COMMITTEE_DT": "2026-03-18",
+        "CMT_PRESENT_DT": "2026-03-19",
+        "CMT_PROC_DT": "2026-04-17",
+        "CMT_PROC_RESULT_CD": "대안반영폐기",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "2026-04-18",
+        "PROC_RESULT_CD": "대안반영폐기",
+        "CURR_COMMITTEE": "정치개혁특별위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제5차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제5차 전체회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제8차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제8차 소위회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "alternative_unverified",
+      "stage": "대안반영(공포 연계 확인 전)",
+      "rank": 100,
+      "promulgation_date": ""
     },
     {
       "number": "2216750",
+      "bill_id": "PRC_J2R6P0Q1O3P0N1O5W4W7U0V8T7S2S7",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 17인",
       "date": "2026-02-11",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q1O3P0N1O5W4W7U0V8T7S2S7",
+      "details": {
+        "COMMITTEE_DT": "2026-02-12",
+        "CMT_PRESENT_DT": "2026-08-24",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-08-24",
+          "name": "제438회 국회(임시회) 제1차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2216064",
+      "bill_id": "PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "김한규의원 등 13인",
       "date": "2026-01-15",
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8",
+      "details": {
+        "COMMITTEE_DT": "2026-01-16",
+        "CMT_PRESENT_DT": "2026-03-10",
+        "CMT_PROC_DT": "2026-03-26",
+        "CMT_PROC_RESULT_CD": "대안반영폐기",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "2026-05-07",
+        "PROC_RESULT_CD": "대안반영폐기",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-10",
+          "name": "제433회 국회(임시회) 제1차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-10",
+          "name": "제433회 국회(임시회) 제1차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-10",
+          "name": "제433회 국회(임시회) 제1차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-10",
+          "name": "제433회 국회(임시회) 제1차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-10",
+          "name": "제433회 국회(임시회) 제1차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "alternative_unverified",
+      "stage": "대안반영(공포 연계 확인 전)",
+      "rank": 100,
+      "promulgation_date": ""
     },
     {
       "number": "2214954",
+      "bill_id": "PRC_U2U5C1B1C2A4A1Y5Z1H2I1G7H8F2F4",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "조계원의원 등 10인",
       "date": "2025-12-05",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2U5C1B1C2A4A1Y5Z1H2I1G7H8F2F4",
+      "details": {
+        "COMMITTEE_DT": "2025-12-08",
+        "CMT_PRESENT_DT": "2026-02-05",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-02-05",
+          "name": "제432회 국회(임시회) 제1차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-02-05",
+          "name": "제432회 국회(임시회) 제1차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-02-05",
+          "name": "제432회 국회(임시회) 제1차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-02-05",
+          "name": "제432회 국회(임시회) 제1차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-02-05",
+          "name": "제432회 국회(임시회) 제1차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2213920",
+      "bill_id": "PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "정춘생의원 등 10인",
       "date": "2025-11-05",
       "status": "대안반영폐기",
       "committee": "정치개혁특별위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9",
+      "details": {
+        "COMMITTEE_DT": "2026-03-18",
+        "CMT_PRESENT_DT": "2026-03-19",
+        "CMT_PROC_DT": "2026-04-17",
+        "CMT_PROC_RESULT_CD": "대안반영폐기",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "2026-04-18",
+        "PROC_RESULT_CD": "대안반영폐기",
+        "CURR_COMMITTEE": "정치개혁특별위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-19",
+          "name": "제433회 국회(임시회) 제4차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제5차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제5차 전체회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제8차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제8차 소위회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "alternative_unverified",
+      "stage": "대안반영(공포 연계 확인 전)",
+      "rank": 100,
+      "promulgation_date": ""
     },
     {
       "number": "2213827",
+      "bill_id": "PRC_I2J5H0H8G2H9C1B4B1Z5A0Y0H9H3F9",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 12인",
       "date": "2025-10-31",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_I2J5H0H8G2H9C1B4B1Z5A0Y0H9H3F9",
+      "details": {
+        "COMMITTEE_DT": "2025-11-03",
+        "CMT_PRESENT_DT": "",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-11-20",
+          "name": "제429회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 접수",
+      "rank": 45,
+      "promulgation_date": ""
     },
     {
       "number": "2213814",
+      "bill_id": "PRC_T2R5R0Z8A2Y9Z1Y4W1W4E2F2D3C4C7",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 13인",
       "date": "2025-10-30",
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2R5R0Z8A2Y9Z1Y4W1W4E2F2D3C4C7",
+      "details": {
+        "COMMITTEE_DT": "2025-10-31",
+        "CMT_PRESENT_DT": "2026-03-26",
+        "CMT_PROC_DT": "2026-03-26",
+        "CMT_PROC_RESULT_CD": "대안반영폐기",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "2026-05-07",
+        "PROC_RESULT_CD": "대안반영폐기",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-11-20",
+          "name": "제429회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "alternative_unverified",
+      "stage": "대안반영(공포 연계 확인 전)",
+      "rank": 100,
+      "promulgation_date": ""
     },
     {
       "number": "2213781",
+      "bill_id": "PRC_B2I5J1I0I2G7H1F0N0O6M5N4L9L8K2",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 10인",
       "date": "2025-10-29",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_B2I5J1I0I2G7H1F0N0O6M5N4L9L8K2",
+      "details": {
+        "COMMITTEE_DT": "2025-10-30",
+        "CMT_PRESENT_DT": "",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-11-20",
+          "name": "제429회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 접수",
+      "rank": 45,
+      "promulgation_date": ""
     },
     {
       "number": "2211840",
+      "bill_id": "PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 11인",
       "date": "2025-07-30",
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5",
+      "details": {
+        "COMMITTEE_DT": "2025-07-31",
+        "CMT_PRESENT_DT": "2026-03-26",
+        "CMT_PROC_DT": "2026-03-26",
+        "CMT_PROC_RESULT_CD": "대안반영폐기",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "2026-05-07",
+        "PROC_RESULT_CD": "대안반영폐기",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-11-20",
+          "name": "제429회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "alternative_unverified",
+      "stage": "대안반영(공포 연계 확인 전)",
+      "rank": 100,
+      "promulgation_date": ""
     },
     {
       "number": "2210719",
+      "bill_id": "PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "문대림의원 등 10인",
       "date": "2025-06-11",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9",
+      "details": {
+        "COMMITTEE_DT": "2025-06-12",
+        "CMT_PRESENT_DT": "2025-08-27",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-27",
+          "name": "제428회 국회(임시회) 제1차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-27",
+          "name": "제428회 국회(임시회) 제1차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-27",
+          "name": "제428회 국회(임시회) 제1차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-27",
+          "name": "제428회 국회(임시회) 제1차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-27",
+          "name": "제428회 국회(임시회) 제1차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2209705",
+      "bill_id": "PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 10인",
       "date": "2025-04-10",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8",
+      "details": {
+        "COMMITTEE_DT": "2025-04-11",
+        "CMT_PRESENT_DT": "2025-07-01",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-08",
+          "name": "제427회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-11-20",
+          "name": "제429회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2207389",
+      "bill_id": "PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 10인",
       "date": "2025-01-09",
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9",
+      "details": {
+        "COMMITTEE_DT": "2025-01-10",
+        "CMT_PRESENT_DT": "2025-07-01",
+        "CMT_PROC_DT": "2026-03-26",
+        "CMT_PROC_RESULT_CD": "대안반영폐기",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "2026-05-07",
+        "PROC_RESULT_CD": "대안반영폐기",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-08",
+          "name": "제427회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-11-20",
+          "name": "제429회 국회(정기회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "alternative_unverified",
+      "stage": "대안반영(공포 연계 확인 전)",
+      "rank": 100,
+      "promulgation_date": ""
     },
     {
       "number": "2207167",
+      "bill_id": "PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 10인",
       "date": "2024-12-31",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7",
+      "details": {
+        "COMMITTEE_DT": "2025-01-02",
+        "CMT_PRESENT_DT": "2025-07-01",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-08",
+          "name": "제427회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-08-26",
+          "name": "제428회 국회(임시회) 제1차 소위회의",
+          "result": "축조심사"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2203108",
+      "bill_id": "PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "김용태의원 등 12인",
       "date": "2024-08-23",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2",
+      "details": {
+        "COMMITTEE_DT": "2024-08-26",
+        "CMT_PRESENT_DT": "2024-11-20",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "소위회부"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-11",
+          "name": "제433회 국회(임시회) 제1차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-16",
+          "name": "제433회 국회(임시회) 제2차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-17",
+          "name": "제433회 국회(임시회) 제3차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-24",
+          "name": "제433회 국회(임시회) 제4차 소위회의",
+          "result": "축조심사"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     },
     {
       "number": "2200931",
+      "bill_id": "PRC_T2S4P0Y6X1W7V0B9C5B2K0J8G7C0B0",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
       "proposer": "위성곤의원 등 12인",
       "date": "2024-06-25",
       "status": "미처리",
       "committee": "행정안전위원회",
-      "url": "https://likms.assembly.go.kr/bill/main.do"
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2S4P0Y6X1W7V0B9C5B2K0J8G7C0B0",
+      "details": {
+        "COMMITTEE_DT": "2024-06-26",
+        "CMT_PRESENT_DT": "2024-09-02",
+        "CMT_PROC_DT": "",
+        "CMT_PROC_RESULT_CD": "",
+        "LAW_SUBMIT_DT": "",
+        "LAW_PRESENT_DT": "",
+        "LAW_PROC_DT": "",
+        "LAW_PROC_RESULT_CD": "",
+        "PROC_DT": "",
+        "PROC_RESULT_CD": "",
+        "CURR_COMMITTEE": "행정안전위원회",
+        "GOV_SUBMIT_DT": "",
+        "PROMULGATION_DT": "",
+        "PROMUL_DT": "",
+        "PROM_DT": ""
+      },
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-09-02",
+          "name": "제418회 국회(정기회) 제1차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-09-02",
+          "name": "제418회 국회(정기회) 제1차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-09-02",
+          "name": "제418회 국회(정기회) 제1차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-09-02",
+          "name": "제418회 국회(정기회) 제1차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-09-02",
+          "name": "제418회 국회(정기회) 제1차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": ""
     }
   ],
   "law": null,
@@ -241,11 +1972,27 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-18 14:13 KST"
+      "checked_at": "2026-11-18 14:38 KST"
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-18 14:13 KST"
+      "checked_at": "2026-11-18 14:38 KST"
+    },
+    "schedule": {
+      "status": "일부 확인",
+      "checked_at": "2026-11-18 14:38 KST",
+      "queries": 4,
+      "errors": 4
+    },
+    "detail": {
+      "status": "정상",
+      "checked_at": "2026-11-18 14:38 KST",
+      "details": 26,
+      "meetings": 23,
+      "total": 26
     }
-  }
+  },
+  "committee_schedules": [],
+  "scope": "22대 의원발의안 중심; 의안별 상세 링크는 국회 내부 의안ID 확인된 건만 표시; 단계별 심사/회의 기록은 확인분만 표시. 정부안·위원회안 수집은 추가 개발 필요.",
+  "recent_days": 30
 }
