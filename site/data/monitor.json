@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-18 20:38 KST",
+  "checked_at": "2026-11-18 20:57 KST",
   "bills": [
     {
       "number": "2222797",
@@ -10,6 +10,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_EF4A658CA79B4A509DC96D3AD6B886",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-11-16",
         "CMT_PRESENT_DT": "",
@@ -34,7 +36,9 @@
       "completion_kind": "",
       "stage": "소관위 접수",
       "rank": 45,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2222555",
@@ -45,6 +49,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_8FD369AFF48F48479E0D90509AAD91",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-11-09",
         "CMT_PRESENT_DT": "",
@@ -69,7 +75,9 @@
       "completion_kind": "",
       "stage": "소관위 접수",
       "rank": 45,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2221642",
@@ -80,6 +88,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-09-30",
         "CMT_PRESENT_DT": "2026-11-16",
@@ -147,7 +157,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2221583",
@@ -158,6 +170,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-09-29",
         "CMT_PRESENT_DT": "2026-11-16",
@@ -225,7 +239,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2220630",
@@ -236,6 +252,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2I6J0H7H2Q7Q1O3P5O2M2M2U9V2T1",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-08-20",
         "CMT_PRESENT_DT": "",
@@ -260,7 +278,9 @@
       "completion_kind": "",
       "stage": "소관위 접수",
       "rank": 45,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2220553",
@@ -271,6 +291,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G6G0E8D0D3L1M6K3L1J4I6I5Q4R5",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-08-13",
         "CMT_PRESENT_DT": "2026-11-16",
@@ -320,7 +342,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2219514",
@@ -331,6 +355,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2S6R0Z6A2Z5X1V3E1D3D1C7A7X3V2",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-07-01",
         "CMT_PRESENT_DT": "2026-11-16",
@@ -380,7 +406,127 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
+    },
+    {
+      "official_alternative": true,
+      "number": "2218559",
+      "bill_id": "PRC_O2Z6G0Y3Z2P5Q2A2N4M4M2V3P9G9R3",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "date": "2026-04-22",
+      "proposer": "행정안전위원장",
+      "proposer_kind": "위원장",
+      "status": "원안가결",
+      "committee": "행정안전위원회",
+      "url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_O2Z6G0Y3Z2P5Q2A2N4M4M2V3P9G9R3",
+      "details": {
+        "PROMULGATION_DT": "2026-06-02",
+        "PROC_DT": "2026-05-07",
+        "PROC_RESULT_CD": "원안가결",
+        "GOV_SUBMIT_DT": "2026-05-22",
+        "CMT_PRESENT_DT": "2026-03-26",
+        "CMT_PROC_DT": "2026-03-26",
+        "CMT_PROC_RESULT_CD": "대안가결",
+        "LAW_SUBMIT_DT": "2026-03-26",
+        "LAW_PRESENT_DT": "2026-04-22",
+        "LAW_PROC_DT": "2026-04-22",
+        "LAW_PROC_RESULT_CD": "수정가결",
+        "CURR_COMMITTEE": "행정안전위원회"
+      },
+      "ref_ids": [],
+      "integrated_source": "TVBPMBILL11",
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-03-26",
+          "name": "제433회 국회(임시회) 제3차 전체회의",
+          "result": "의결"
+        },
+        {
+          "committee_type": "법제사법위원회",
+          "date": "2026-04-22",
+          "name": "제434회 국회(임시회) 제3차 전체회의",
+          "result": "상정/제안설명/검토보고/대체토론/의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "promulgated",
+      "stage": "공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-06-02",
+      "reference_checked_at": "2026-11-18 20:57 KST",
+      "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+      "law_number": "21735",
+      "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    {
+      "official_alternative": true,
+      "number": "2218430",
+      "bill_id": "PRC_P2M6Y0Z4N1O7K2D0V0H3F4A6H3K4E6",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "date": "2026-04-18",
+      "proposer": "정치개혁특별위원장",
+      "proposer_kind": "위원장",
+      "status": "원안가결",
+      "committee": "정치개혁특별위원회",
+      "url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_P2M6Y0Z4N1O7K2D0V0H3F4A6H3K4E6",
+      "details": {
+        "PROMULGATION_DT": "2026-04-22",
+        "PROC_DT": "2026-04-18",
+        "PROC_RESULT_CD": "원안가결",
+        "GOV_SUBMIT_DT": "2026-04-20",
+        "CMT_PRESENT_DT": "2026-04-17",
+        "CMT_PROC_DT": "2026-04-17",
+        "CMT_PROC_RESULT_CD": "대안가결",
+        "LAW_SUBMIT_DT": "2026-04-17",
+        "LAW_PRESENT_DT": "2026-04-17",
+        "LAW_PROC_DT": "2026-04-17",
+        "LAW_PROC_RESULT_CD": "수정가결",
+        "CURR_COMMITTEE": "정치개혁특별위원회"
+      },
+      "ref_ids": [],
+      "integrated_source": "TVBPMBILL11",
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "법제사법위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제2차 전체회의",
+          "result": "상정/제안설명/검토보고/대체토론/의결"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제5차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2026-04-17",
+          "name": "제434회 국회(임시회) 제5차 전체회의",
+          "result": "의결"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "completed",
+      "completion_kind": "promulgated",
+      "stage": "공포 확인",
+      "rank": 200,
+      "promulgation_date": "2026-04-22",
+      "reference_checked_at": "2026-11-18 20:57 KST",
+      "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+      "law_number": "21576",
+      "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"
     },
     {
       "number": "2218132",
@@ -391,6 +537,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-04-07",
         "CMT_PRESENT_DT": "2026-08-24",
@@ -446,7 +594,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2217447",
@@ -457,6 +607,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_B2C6A0B3Z0X4Y1G3G3E1G0E3E1C5D3",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-03-16",
         "CMT_PRESENT_DT": "",
@@ -494,7 +646,9 @@
       "completion_kind": "",
       "stage": "소관위 접수",
       "rank": 45,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2217410",
@@ -505,6 +659,8 @@
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z6X0Y3F1G1F1D6D0C8C3Y5Y6X0Y8",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-03-13",
         "CMT_PRESENT_DT": "2026-03-26",
@@ -573,12 +729,15 @@
       "stage": "관련 대안 공포 확인",
       "rank": 200,
       "promulgation_date": "2026-06-02",
+      "ref_ids": [],
+      "reference_checked_at": "2026-11-18 20:57 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
         "law_number": "21735",
         "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
         "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_method": "verified_source",
         "plenary_date": "2026-05-07",
         "gov_transfer_date": "2026-05-22",
         "note": ""
@@ -593,6 +752,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2Y6Z0X3W0W6S1T4R5Q1Q0O4P3X0V1",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-03-10",
         "CMT_PRESENT_DT": "2026-08-24",
@@ -648,7 +809,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2217211",
@@ -659,6 +822,8 @@
       "status": "대안반영폐기",
       "committee": "정치개혁특별위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-03-18",
         "CMT_PRESENT_DT": "2026-03-19",
@@ -739,12 +904,15 @@
       "stage": "관련 대안 공포 확인",
       "rank": 200,
       "promulgation_date": "2026-04-22",
+      "ref_ids": [],
+      "reference_checked_at": "2026-11-18 20:57 KST",
       "related_alternative": {
         "number": "2218430",
         "promulgation_date": "2026-04-22",
         "law_number": "21576",
         "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
         "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+        "relationship_method": "verified_source",
         "plenary_date": "2026-04-18",
         "gov_transfer_date": "2026-04-20",
         "note": ""
@@ -759,6 +927,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q1O3P0N1O5W4W7U0V8T7S2S7",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-02-12",
         "CMT_PRESENT_DT": "2026-08-24",
@@ -814,7 +984,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2216064",
@@ -825,6 +997,8 @@
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-01-16",
         "CMT_PRESENT_DT": "2026-03-10",
@@ -911,12 +1085,15 @@
       "stage": "관련 대안 공포 확인",
       "rank": 200,
       "promulgation_date": "2026-06-02",
+      "ref_ids": [],
+      "reference_checked_at": "2026-11-18 20:57 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
         "law_number": "21735",
         "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
         "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_method": "verified_source",
         "plenary_date": "2026-05-07",
         "gov_transfer_date": "2026-05-22",
         "note": ""
@@ -931,6 +1108,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2U5C1B1C2A4A1Y5Z1H2I1G7H8F2F4",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-12-08",
         "CMT_PRESENT_DT": "2026-02-05",
@@ -986,7 +1165,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2213920",
@@ -997,6 +1178,8 @@
       "status": "대안반영폐기",
       "committee": "정치개혁특별위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2026-03-18",
         "CMT_PRESENT_DT": "2026-03-19",
@@ -1077,12 +1260,15 @@
       "stage": "관련 대안 공포 확인",
       "rank": 200,
       "promulgation_date": "2026-04-22",
+      "ref_ids": [],
+      "reference_checked_at": "2026-11-18 20:57 KST",
       "related_alternative": {
         "number": "2218430",
         "promulgation_date": "2026-04-22",
         "law_number": "21576",
         "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
         "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
+        "relationship_method": "verified_source",
         "plenary_date": "2026-04-18",
         "gov_transfer_date": "2026-04-20",
         "note": ""
@@ -1097,6 +1283,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_I2J5H0H8G2H9C1B4B1Z5A0Y0H9H3F9",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-11-03",
         "CMT_PRESENT_DT": "",
@@ -1158,7 +1346,9 @@
       "completion_kind": "",
       "stage": "소관위 접수",
       "rank": 45,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2213814",
@@ -1169,6 +1359,8 @@
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2R5R0Z8A2Y9Z1Y4W1W4E2F2D3C4C7",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-10-31",
         "CMT_PRESENT_DT": "2026-03-26",
@@ -1249,12 +1441,15 @@
       "stage": "관련 대안 공포 확인",
       "rank": 200,
       "promulgation_date": "2026-06-02",
+      "ref_ids": [],
+      "reference_checked_at": "2026-11-18 20:57 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
         "law_number": "21735",
         "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
         "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_method": "verified_source",
         "plenary_date": "2026-05-07",
         "gov_transfer_date": "2026-05-22",
         "note": ""
@@ -1269,6 +1464,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_B2I5J1I0I2G7H1F0N0O6M5N4L9L8K2",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-10-30",
         "CMT_PRESENT_DT": "",
@@ -1330,7 +1527,9 @@
       "completion_kind": "",
       "stage": "소관위 접수",
       "rank": 45,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2211840",
@@ -1341,6 +1540,8 @@
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-07-31",
         "CMT_PRESENT_DT": "2026-03-26",
@@ -1433,12 +1634,15 @@
       "stage": "관련 대안 공포 확인",
       "rank": 200,
       "promulgation_date": "2026-06-02",
+      "ref_ids": [],
+      "reference_checked_at": "2026-11-18 20:57 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
         "law_number": "21735",
         "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
         "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
+        "relationship_method": "verified_source",
         "plenary_date": "2026-05-07",
         "gov_transfer_date": "2026-05-22",
         "note": ""
@@ -1453,6 +1657,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-06-12",
         "CMT_PRESENT_DT": "2025-08-27",
@@ -1538,7 +1744,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2209705",
@@ -1549,6 +1757,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-04-11",
         "CMT_PRESENT_DT": "2025-07-01",
@@ -1646,7 +1856,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2207389",
@@ -1657,6 +1869,8 @@
       "status": "대안반영폐기",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-01-10",
         "CMT_PRESENT_DT": "2025-07-01",
@@ -1755,12 +1969,15 @@
       "stage": "관련 대안 공포 확인",
       "rank": 200,
       "promulgation_date": "2026-06-02",
+      "ref_ids": [],
+      "reference_checked_at": "",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
         "law_number": "21735",
         "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
         "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2207389/detailRP",
+        "relationship_method": "verified_source",
         "plenary_date": "2026-05-07",
         "gov_transfer_date": "2026-05-22",
         "note": ""
@@ -1775,6 +1992,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2025-01-02",
         "CMT_PRESENT_DT": "2025-07-01",
@@ -1872,7 +2091,9 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     },
     {
       "number": "2203108",
@@ -1883,6 +2104,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2024-08-26",
         "CMT_PRESENT_DT": "2024-11-20",
@@ -1968,7 +2191,68 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
+    },
+    {
+      "official_alternative": false,
+      "number": "2202231",
+      "bill_id": "ARC_B2T4M0R7D2Q5U1Q0I4Z0X3A9N8O3G9",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "date": "2024-07-25",
+      "proposer": "정부",
+      "proposer_kind": "정부",
+      "status": "미처리",
+      "committee": "행정안전위원회",
+      "url": "",
+      "details": {
+        "COMMITTEE_DT": "2024-07-26",
+        "CMT_PRESENT_DT": "2024-11-20",
+        "CURR_COMMITTEE": "행정안전위원회"
+      },
+      "ref_ids": [],
+      "integrated_source": "TVBPMBILL11",
+      "details_ok": true,
+      "meetings": [
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "상정"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "제안설명"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "검토보고"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "대체토론"
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2024-11-20",
+          "name": "제418회 국회(정기회) 제12차 전체회의",
+          "result": "소위회부"
+        }
+      ],
+      "meetings_ok": true,
+      "group": "ongoing",
+      "completion_kind": "",
+      "stage": "소관위 심사",
+      "rank": 57,
+      "promulgation_date": "",
+      "reference_checked_at": ""
     },
     {
       "number": "2200931",
@@ -1979,6 +2263,8 @@
       "status": "미처리",
       "committee": "행정안전위원회",
       "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2S4P0Y6X1W7V0B9C5B2K0J8G7C0B0",
+      "proposer_kind": "의원",
+      "integrated_source": "TVBPMBILL11",
       "details": {
         "COMMITTEE_DT": "2024-06-26",
         "CMT_PRESENT_DT": "2024-09-02",
@@ -2034,67 +2320,21 @@
       "completion_kind": "",
       "stage": "소관위 심사",
       "rank": 57,
-      "promulgation_date": ""
-    },
-    {
-      "number": "2218559",
-      "bill_id": "",
-      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
-      "date": "2026-04-22",
-      "proposer": "행정안전위원장",
-      "committee": "행정안전위원회",
-      "status": "원안가결",
-      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
-      "official_alternative": true,
-      "details_ok": false,
-      "meetings_ok": false,
-      "meetings": [],
-      "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
-      "law_number": "21735",
-      "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
-      "details": {
-        "PROMULGATION_DT": "2026-06-02",
-        "PROC_DT": "2026-05-07",
-        "PROC_RESULT_CD": "원안가결",
-        "GOV_SUBMIT_DT": "2026-05-22"
-      },
-      "group": "completed",
-      "completion_kind": "promulgated",
-      "stage": "공포 확인",
-      "rank": 200,
-      "promulgation_date": "2026-06-02"
-    },
-    {
-      "number": "2218430",
-      "bill_id": "",
-      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
-      "date": "2026-04-18",
-      "proposer": "정치개혁특별위원장",
-      "committee": "정치개혁특별위원회",
-      "status": "원안가결",
-      "url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
-      "official_alternative": true,
-      "details_ok": false,
-      "meetings_ok": false,
-      "meetings": [],
-      "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
-      "law_number": "21576",
-      "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
-      "details": {
-        "PROMULGATION_DT": "2026-04-22",
-        "PROC_DT": "2026-04-18",
-        "PROC_RESULT_CD": "원안가결",
-        "GOV_SUBMIT_DT": "2026-04-20"
-      },
-      "group": "completed",
-      "completion_kind": "promulgated",
-      "stage": "공포 확인",
-      "rank": 200,
-      "promulgation_date": "2026-04-22"
+      "promulgation_date": "",
+      "ref_ids": [],
+      "reference_checked_at": ""
     }
   ],
   "law": null,
   "events": [
+    {
+      "kind": "신규 의안",
+      "number": "2202231",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2202231 · 정부 · 2024-07-25 접수 확인",
+      "detected": "2026-11-18 20:57 KST",
+      "url": ""
+    },
     {
       "kind": "심사단계 변경",
       "number": "2217410",
@@ -2227,37 +2467,55 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-18 20:38 KST"
+      "checked_at": "2026-11-18 20:57 KST",
+      "integrated_additions": 3
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-18 20:38 KST"
+      "checked_at": "2026-11-18 20:57 KST"
     },
     "schedule": {
       "status": "일부 확인",
-      "checked_at": "2026-11-18 20:38 KST",
+      "checked_at": "2026-11-18 20:57 KST",
       "queries": 4,
       "errors": 4
     },
     "detail": {
       "status": "정상",
-      "checked_at": "2026-11-18 20:38 KST",
-      "details": 26,
-      "meetings": 23,
-      "total": 26
+      "checked_at": "2026-11-18 20:57 KST",
+      "details": 29,
+      "meetings": 26,
+      "total": 29
     },
     "alternatives": {
-      "status": "공포이력 공식 확인",
-      "checked_at": "2026-11-18 20:38 KST",
+      "status": "공식 API 자동 탐색",
+      "checked_at": "2026-11-18 20:57 KST",
       "details": {
         "2218559": "공식 페이지 재확인",
         "2218430": "공식 페이지 재확인"
       },
       "linked": 7,
-      "note": "기등록된 관계만 자동 추적; 신규 원안-대안 관계 발견은 미구현"
+      "detail_reference_scan": {
+        "candidates": 9,
+        "queried": 8,
+        "references_found": 0,
+        "errors": 0,
+        "query_cap": 8
+      },
+      "discovered_direct_links": 0,
+      "persisted_auto_links": 0,
+      "ambiguous_originals": [],
+      "unresolved_originals": [],
+      "tracked_alternatives": 2,
+      "note": "의원안·정부안·위원회 대안 자동 탐색. 원안-대안은 공식 직접 참조식별자가 있는 경우만 연결. 미확인 관계는 임의 추정하지 않음."
+    },
+    "integrated_bills": {
+      "status": "정상",
+      "checked_at": "2026-11-18 20:57 KST"
     }
   },
   "committee_schedules": [],
-  "scope": "22대 의원발의안 중심 + 공개자료로 검증된 위원회 대안 별도 수록. 대안 연결은 사전 검증된 관계를 유지하며 공식 페이지에서 공포일·법률번호를 재확인. 신규 위원회 대안 및 정부안 전체 자동발견은 추가 개발 필요.",
+  "scope": "22대 의원발의법률안 + 국회 통합 의안검색에서 확인된 정부안·위원장 대안. 원안-대안 관계는 공식 API 참조식별자 직접일치 및 기등록 검증 사례만 사용. 관계 미확인 원안은 별도 관리. 공포는 법제처 공식 의안 상세에서 날짜/법률번호 확인 시에만 표시.",
+  "automatic_alternative_links": {},
   "recent_days": 30
 }
