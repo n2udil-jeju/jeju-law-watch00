@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-18 16:57 KST",
+  "checked_at": "2026-11-18 18:16 KST",
   "bills": [
     {
       "number": "2222797",
@@ -2227,28 +2227,28 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-18 16:57 KST"
+      "checked_at": "2026-11-18 18:16 KST"
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-18 16:57 KST"
+      "checked_at": "2026-11-18 18:16 KST"
     },
     "schedule": {
       "status": "일부 확인",
-      "checked_at": "2026-11-18 16:57 KST",
+      "checked_at": "2026-11-18 18:16 KST",
       "queries": 4,
       "errors": 4
     },
     "detail": {
       "status": "정상",
-      "checked_at": "2026-11-18 16:57 KST",
+      "checked_at": "2026-11-18 18:16 KST",
       "details": 26,
       "meetings": 23,
       "total": 26
     },
     "alternatives": {
       "status": "공포이력 공식 확인",
-      "checked_at": "2026-11-18 16:57 KST",
+      "checked_at": "2026-11-18 18:16 KST",
       "details": {
         "2218559": "공식 페이지 재확인",
         "2218430": "공식 페이지 재확인"
