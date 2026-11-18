@@ -1,0 +1,42 @@
+{
+  "description": "위원회 대안과 관련 원안 연결. 국회 의안정보시스템 대안정보 및 법제처 국민참여입법센터의 공개자료로 확인한 기존 사례. 향후 대안 관계는 공식 자료 검증 후 추가.",
+  "alternatives": {
+    "2218559": {
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "proposer": "행정안전위원장",
+      "date": "2026-04-22",
+      "committee": "행정안전위원회",
+      "status": "원안가결",
+      "plenary_date": "2026-05-07",
+      "plenary_result": "원안가결",
+      "gov_transfer_date": "2026-05-22",
+      "promulgation_date": "2026-06-02",
+      "law_number": "21735",
+      "verified": true,
+      "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
+    },
+    "2218430": {
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "proposer": "정치개혁특별위원장",
+      "date": "2026-04-18",
+      "committee": "정치개혁특별위원회",
+      "status": "원안가결",
+      "plenary_date": "2026-04-18",
+      "plenary_result": "원안가결",
+      "gov_transfer_date": "2026-04-20",
+      "promulgation_date": "2026-04-22",
+      "law_number": "21576",
+      "verified": true,
+      "evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"
+    }
+  },
+  "links": {
+    "2207389": {"verified": true, "alternative_bill_no": "2218559", "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2207389/detailRP"},
+    "2211840": {"verified": true, "alternative_bill_no": "2218559", "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"},
+    "2213814": {"verified": true, "alternative_bill_no": "2218559", "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"},
+    "2216064": {"verified": true, "alternative_bill_no": "2218559", "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"},
+    "2217410": {"verified": true, "alternative_bill_no": "2218559", "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"},
+    "2213920": {"verified": true, "alternative_bill_no": "2218430", "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"},
+    "2217211": {"verified": true, "alternative_bill_no": "2218430", "relationship_evidence_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"}
+  }
+}

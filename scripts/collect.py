@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import concurrent.futures
 import hashlib
+from html.parser import HTMLParser
 import json
 import os
 import re
@@ -26,7 +27,7 @@ KST = ZoneInfo("Asia/Seoul")
 ALT_MARKERS = ("대안반영폐기", "수정안반영폐기", "대안 반영 폐기", "수정안 반영 폐기")
 END_MARKERS = ALT_MARKERS + ("임기만료폐기", "철회", "부결", "폐기", "불부의")
 LINK_PATH = PATH.parent / "verified_alternatives.json"
-OFFICIAL_HOSTS = {"likms.assembly.go.kr", "open.assembly.go.kr", "www.law.go.kr", "law.go.kr", "www.assembly.go.kr"}
+OFFICIAL_HOSTS = {"likms.assembly.go.kr", "open.assembly.go.kr", "www.law.go.kr", "law.go.kr", "www.assembly.go.kr", "opinion.lawmaking.go.kr"}
 SCHEDULE_URL = "https://www.assembly.go.kr/portal/main/main.do#anchor7"
 SCHEDULE_CODES = (("nrsldhjpaemrmolla", "위원회 전체회의"), ("nrkqqbvfanfybishu", "법안심사소위원회"))
 BILL_DETAIL_BASE = "https://likms.assembly.go.kr/bill/bi/billDetailPage.do"
@@ -197,6 +198,120 @@ def official_evidence(url):
         return False
 
 
+def official_alternative_url(no):
+    return f"https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/{no}/detailRP"
+
+
+class _GovPageText(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.parts = []
+        self.hidden = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ('script', 'style'):
+            self.hidden += 1
+
+    def handle_endtag(self, tag):
+        if tag in ('script', 'style') and self.hidden:
+            self.hidden -= 1
+
+    def handle_data(self, data):
+        if not self.hidden:
+            self.parts.append(data.strip())
+
+
+def parse_official_alternative_page(raw, number):
+    """법제처 공식 의안 진행화면에서 *해당 의안*의 공포 항목만 추출.
+
+    자동 수집 실패 시 기존 공포 사실을 지우지 않으며, 비슷한 법안명으로 공포를 추론하지 않음.
+    """
+    html = raw.decode('utf-8-sig', errors='replace') if isinstance(raw, bytes) else str(raw)
+    parser = _GovPageText()
+    parser.feed(html)
+    text = ' '.join(x for x in parser.parts if x)
+    expected = r'(?:제\s*)?' + re.escape(str(number)) + r'(?:\s*호)?'
+    if not re.search(expected, text) or '제주특별자치도' not in text:
+        raise ValueError('공식 페이지 의안번호 또는 의안명 불일치')
+    def extract(label, pattern, default=''):
+        found = re.search(re.escape(label) + r'\s*[:：]?\s*' + pattern, text)
+        return found.group(1) if found else default
+    date_pattern = r'((?:19|20)\d{2}\s*[.\-]\s*\d{1,2}\s*[.\-]\s*\d{1,2})'
+    published = extract('공포일자', date_pattern)
+    no = extract('공포번호', r'(?:법률\s*)?(?:제\s*)?(\d{4,7})\s*(?:호)?')
+    def standard_date(value):
+        if not value:
+            return ''
+        nums = re.findall(r'\d+', value)
+        return f'{int(nums[0]):04d}-{int(nums[1]):02d}-{int(nums[2]):02d}' if len(nums)==3 else ''
+    return {'promulgation_date': standard_date(published), 'law_number': no,
+            'gov_transfer_date': standard_date(extract('정부이송일', date_pattern)),
+            'evidence_url': official_alternative_url(number)}
+
+
+def refresh_verified_alternatives(mappings, fetch=None):
+    """이미 공식 확인된 위원회 대안의 후속 처리·공포를 공식 공개자료로 재확인.
+
+    운영 서버에서 페이지가 차단/미갱신된 경우에도 검증된 과거 사실은 보존.
+    새 원안·대안 간 연결관계의 자동 발견은 별도 수집기능이 필요함.
+    """
+    if fetch is None:
+        fetch = lambda url: urllib.request.urlopen(
+            urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0 (compatible; JejuLawWatch/0.6)'}), timeout=12).read(2_000_000)
+    statuses = {}
+    for alt_no, alt in (mappings.get('alternatives') or {}).items():
+        if not alt.get('verified') or not official_evidence(alt.get('evidence_url')):
+            statuses[alt_no] = '미검증'
+            continue
+        try:
+            fetched = parse_official_alternative_page(fetch(official_alternative_url(alt_no)), alt_no)
+            if fetched.get('promulgation_date') and fetched.get('law_number'):
+                # API 지연 등으로 과거 공포기록을 되돌릴 수는 없음. 불일치 시 기존 검증값과 병행 점검.
+                if (alt.get('promulgation_date') and alt['promulgation_date'] != fetched['promulgation_date']) or (alt.get('law_number') and str(alt['law_number']) != fetched['law_number']):
+                    statuses[alt_no] = '공식자료 불일치(확인 필요)'
+                    continue
+                alt.update(fetched)
+                statuses[alt_no] = '공식 페이지 재확인'
+            else:
+                statuses[alt_no] = '공포항목 미검출(기존 검증기록 유지)'
+        except Exception as exc:
+            statuses[alt_no] = '재조회 오류(기존 검증기록 유지): ' + type(exc).__name__
+    return statuses
+
+
+def append_verified_alternative_bills(bills, mappings):
+    """의원발의 목록에 없는 위원회 대안을 별도 완료 의안으로 추가."""
+    by_no = {str(b.get('number')): b for b in bills}
+    for no, alt in (mappings.get('alternatives') or {}).items():
+        if not (alt.get('verified') and re_date(str(alt.get('promulgation_date') or ''))
+                and str(alt.get('law_number') or '').isdigit()
+                and official_evidence(alt.get('evidence_url'))):
+            continue
+        row = by_no.get(no)
+        if row is None:
+            row = {'number': no, 'bill_id':'', 'title': alt.get('title') or TITLE + ' 일부개정법률안(대안)',
+                   'date': alt.get('date') or '', 'proposer': alt.get('proposer') or '위원회 대안',
+                   'committee': alt.get('committee') or '', 'status': alt.get('status') or '원안가결',
+                   'url':alt['evidence_url'], 'official_alternative':True,
+                   'details_ok':False, 'meetings_ok':False, 'meetings':[]}
+            bills.append(row)
+            by_no[no] = row
+        row['official_alternative'] = True
+        row['official_detail_url'] = alt['evidence_url']
+        row['law_number'] = str(alt['law_number'])
+        row['promulgation_source'] = alt['evidence_url']
+        ds = dict(row.get('details') or {})
+        ds.update({'PROMULGATION_DT': alt['promulgation_date']})
+        if alt.get('plenary_date'):
+            ds['PROC_DT'] = alt['plenary_date']
+        if alt.get('plenary_result'):
+            ds['PROC_RESULT_CD'] = alt['plenary_result']
+        if alt.get('gov_transfer_date'):
+            ds['GOV_SUBMIT_DT'] = alt['gov_transfer_date']
+        row['details'] = ds
+    return bills
+
+
 def apply_verified_alternatives(bills, mappings):
     """원안→대안 연결은 검증된 출처가 등록된 경우에만 승인.
 
@@ -213,15 +328,19 @@ def apply_verified_alternatives(bills, mappings):
         if not any(mark.replace(' ', '') in str(bill.get('status') or '').replace(' ', '') for mark in ALT_MARKERS):
             continue
         alt_no = str(entry.get('alternative_bill_no') or '').strip()
-        published = str(entry.get('promulgation_date') or '').strip()
-        evidence = str(entry.get('evidence_url') or '').strip()
+        target = (mappings.get('alternatives') or {}).get(alt_no) or {}
+        published = str(target.get('promulgation_date') or entry.get('promulgation_date') or '').strip()
+        evidence = str(target.get('evidence_url') or entry.get('evidence_url') or '').strip()
         if not (alt_no.isdigit() and re_date(published) and official_evidence(evidence)):
             continue
         bill['related_alternative'] = {
             'number': alt_no,
             'promulgation_date': published,
-            'law_number': str(entry.get('law_number') or ''),
+            'law_number': str(target.get('law_number') or entry.get('law_number') or ''),
             'evidence_url': evidence,
+            'relationship_evidence_url': str(entry.get('relationship_evidence_url') or ''),
+            'plenary_date': str(target.get('plenary_date') or ''),
+            'gov_transfer_date': str(target.get('gov_transfer_date') or ''),
             'note': str(entry.get('note') or '')[:250],
         }
         count += 1
@@ -247,7 +366,7 @@ def classify_bill(bill):
             return {'group':'completed', 'completion_kind':'promulgated', 'stage':'관련 대안 공포 확인',
                     'rank': 200, 'promulgation_date': confirmed_alt['promulgation_date']}
         return {'group':'completed', 'completion_kind':'alternative_unverified',
-                'stage':'대안반영(공포 연계 확인 전)', 'rank': 100, 'promulgation_date':''}
+                'stage':'대안반영(관련 대안 확인 필요)', 'rank': 100, 'promulgation_date':''}
     promulgation = dt('PROMULGATION_DT') or dt('PROMUL_DT') or dt('PROM_DT')
     if promulgation or ('공포' in clean and '공포전' not in clean and '공포전' not in status):
         return {'group':'completed', 'completion_kind':'promulgated', 'stage':'공포 확인',
@@ -577,7 +696,11 @@ def main():
     except (ValueError, OSError) as exc:
         print('ALTERNATIVE LINK FILE ERROR', type(exc).__name__, str(exc), file=sys.stderr)
         manual_links = {'links': {}}
+    alternative_status = refresh_verified_alternatives(manual_links)
+    bills = append_verified_alternative_bills(bills, manual_links)
     confirmed_links = apply_verified_alternatives(bills, manual_links)
+    sources['alternatives'] = {'status': '공포이력 공식 확인', 'checked_at': ts, 'details': alternative_status,
+                               'linked': confirmed_links, 'note':'기등록된 관계만 자동 추적; 신규 원안-대안 관계 발견은 미구현'}
     for b in bills:
         b.update(classify_bill(b))
     events = detect_events(old, bills, law, assembly_ok, law_ok, ts)
@@ -594,7 +717,7 @@ def main():
     sources['detail'] = source_detail
     new = {'checked_at': ts, 'bills': bills, 'law': law, 'events': history, 'sources': sources,
            'committee_schedules': schedules,
-           'scope': '22대 의원발의안 중심; 의안별 상세 링크는 국회 내부 의안ID 확인된 건만 표시; 단계별 심사/회의 기록은 확인분만 표시. 정부안·위원회안 수집은 추가 개발 필요.',
+           'scope': '22대 의원발의안 중심 + 공개자료로 검증된 위원회 대안 별도 수록. 대안 연결은 사전 검증된 관계를 유지하며 공식 페이지에서 공포일·법률번호를 재확인. 신규 위원회 대안 및 정부안 전체 자동발견은 추가 개발 필요.',
            'recent_days': 30}
     PATH.parent.mkdir(parents=True, exist_ok=True)
     PATH.write_text(json.dumps(new, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
