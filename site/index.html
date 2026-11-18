@@ -1,9 +1,54 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0e314a"><meta name="description" content="제주특별법 개정안 및 법령 변경사항을 공식 공개 데이터로 확인하는 비공식 모니터링 사이트"><title>제주특별법 입법동향 모니터링</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="hero"><div class="head-wrap"><div class="eyebrow">JEJU SPECIAL ACT · LEGISLATION WATCH</div><h1>제주특별법<br><span>입법동향 모니터링</span></h1><p>국회 의안정보와 국가법령정보를 한눈에. 새로운 발의와 변경 이력을 공식 자료로 확인하세요.</p><div class="hero-foot"><span id="last-check">데이터 연결 대기</span><span class="dot">·</span><span>약 30분 간격 확인 시도</span></div></div></header>
-<main class="page"><section id="notice" class="notice" role="status">연결 상태를 확인하고 있습니다.</section>
-<section class="stats" aria-label="요약"><div class="stat"><strong id="count-bills">–</strong><span>수집된 관련 의안</span></div><div class="stat"><strong id="count-events">–</strong><span>확인된 변경 기록</span></div><div class="stat"><strong id="count-law">–</strong><span>제주특별법 법령 정보</span></div></section>
-<section class="section"><div class="section-head"><div><div class="eyebrow dark">CHANGE LOG</div><h2>최근 변경사항</h2></div><span class="pill" id="event-total">확인 대기</span></div><div id="events" class="event-list"><div class="empty">공식 데이터를 불러오고 있습니다.</div></div></section>
-<section class="section"><div class="section-head"><div><div class="eyebrow dark">BILLS</div><h2>제주특별법 관련 의안</h2></div><a class="soft-link" href="https://likms.assembly.go.kr/bill/main.do" target="_blank" rel="noopener noreferrer">의안정보시스템 ↗</a></div><div class="filters"><label class="sr-only" for="search">법안 검색</label><input id="search" type="search" placeholder="의안번호, 법안명, 대표발의자 검색" autocomplete="off"><label class="sr-only" for="stage">처리상태 필터</label><select id="stage"><option value="">전체 처리상태</option></select></div><div class="table-scroll"><table><thead><tr><th>의안번호</th><th>법률안명</th><th>제안자 / 제안일</th><th>처리상태</th><th>원문</th></tr></thead><tbody id="bills"><tr><td colspan="5" class="empty">수집 결과를 기다리는 중입니다.</td></tr></tbody></table></div><p class="fine">※ 1차 버전은 열린국회정보의 <b>의원발의 법률안 목록 API</b>를 사용합니다. 정부제출안·위원회안 및 상세 소위 심사경과는 빠질 수 있습니다.</p></section>
-<section class="section"><div class="section-head"><div><div class="eyebrow dark">LAW</div><h2>현행 제주특별법</h2></div><a class="soft-link" href="https://www.law.go.kr/법령/제주특별자치도설치및국제자유도시조성을위한특별법" target="_blank" rel="noopener noreferrer">국가법령정보센터 ↗</a></div><div class="law-card" id="law-card"><div class="empty">법령정보 확인 대기</div></div></section>
-<footer><p><strong>비공식 공개 정보 서비스</strong> · 대한민국 정부 또는 제주특별자치도 공식 홈페이지가 아닙니다.</p><p>자료 출처: <a href="https://open.assembly.go.kr" target="_blank" rel="noopener noreferrer">열린국회정보</a> · <a href="https://www.law.go.kr" target="_blank" rel="noopener noreferrer">국가법령정보센터</a> · 수집 지연 또는 오류 시 공식 원문을 우선 확인하세요.</p><p id="source-status"></p></footer></main><script src="app.js" defer></script></body></html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e314a">
+  <meta name="description" content="제주특별법 관련 법률안의 발의, 상임위·법사위 심사, 본회의, 공포 현황을 추적하는 비공식 공개 서비스">
+  <title>제주특별법 입법동향 모니터링</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero"><div class="head-wrap">
+    <div class="eyebrow">JEJU SPECIAL ACT · LEGISLATION WATCH</div>
+    <h1>제주특별법<br><span>입법동향 모니터링</span></h1>
+    <p>법률안 발의부터 상임위·법사위 심사, 본회의와 공포까지. 공개된 공식 자료에서 확인된 진행상황을 확인합니다.</p>
+    <div class="hero-foot"><span id="last-check">데이터 확인 중</span><span>·</span><span>약 30분 간격 자동 확인 시도</span></div>
+  </div></header>
+  <main class="page">
+    <section id="notice" class="notice" role="status">국회·법제처 공식 API 기반 입법정보 서비스입니다. 연결 상태 확인 중</section>
+    <section class="stats" aria-label="입법동향 요약">
+      <div class="stat"><strong id="count-bills">–</strong><span>수집된 관련 의안</span></div>
+      <div class="stat"><strong id="count-pending">–</strong><span>입법 진행 중</span><small id="pending-breakdown" class="stat-note">국회 계류·공포 전</small></div>
+      <div class="stat"><strong id="count-completed">–</strong><span>처리 완료</span></div>
+    </section>
+    <p class="stats-breakdown" id="completed-breakdown">완료 세부: 공식 데이터 확인 중</p>
+    <section class="section" id="recent">
+      <div class="section-head"><div><div class="eyebrow dark">CHANGE LOG</div><h2>최근 변경사항</h2></div><span class="pill" id="recent-count">최근 30일 · 확인 중</span></div>
+      <div class="tools"><label for="recent-period">표시 기간</label><select id="recent-period"><option value="7">최근 7일</option><option selected value="30">최근 30일</option><option value="90">최근 90일</option><option value="all">저장된 전체 기록</option></select></div>
+      <div id="events" class="event-list"><div class="empty">변경 기록 확인 중</div></div>
+      <p class="fine">30분은 <b>조회 시도 간격</b>입니다. 변경 이력은 조회 때마다 사라지지 않으며 최대 2년·1,000건 범위에서 보관합니다. 첫 정상 수집은 기준자료만 저장하므로 변경 기록이 생기지 않습니다. 신규·변경사항은 <b>7일간 NEW와 굵은 글씨</b>로 표시합니다.</p>
+    </section>
+    <section class="section" id="committee-schedule">
+      <div class="section-head"><div><div class="eyebrow dark">COMMITTEE SCHEDULE</div><h2>관련 위원회 일정</h2></div><a class="soft-link" href="https://www.assembly.go.kr/portal/main/main.do#anchor7" target="_blank" rel="noopener noreferrer">국회 위원회 일정 ↗</a></div>
+      <p class="fine">국회 위원회 전체회의·법안심사소위 일정 API를 확인합니다. <b>위원회 일정의 공지는 특정 제주특별법 개정안의 상정 확정을 의미하지 않습니다.</b> 일정 또는 시간이 변경되면 최근 변경사항에 기록하고 7일간 NEW를 표시합니다.</p>
+      <div id="committee-schedules" class="schedule-list"><div class="empty">위원회 일정 확인 중</div></div>
+    </section>
+    <section class="section" id="legislation">
+      <div class="section-head"><div><div class="eyebrow dark">LEGISLATIVE TRACKER</div><h2>제주특별법 관련 의안</h2></div><a class="soft-link" href="https://likms.assembly.go.kr/bill/main.do" rel="noopener noreferrer" target="_blank">국회 의안정보 ↗</a></div>
+      <p class="fine">법률안의 <b>접수 → 소관위 접수·상정·심사·처리 → 법사위 접수·상정·심사·처리 → 본회의 → 정부 이송</b> 순으로 표시합니다. 회의·심사 단계는 실제 자료로 확인된 경우에만 표시합니다. 의안번호나 법률안명을 누르면 국회 해당 의안 상세페이지로 연결됩니다.</p>
+      <div class="filters"><label class="sr-only" for="search">검색</label><input type="search" id="search" placeholder="의안번호·법률안명·제안자 검색"><label class="sr-only" for="stage">처리단계</label><select id="stage"><option value="">모든 처리단계</option></select></div>
+      <div class="list-heading"><h3>진행 중인 의안</h3><span class="pill" id="ongoing-total">확인 중</span></div>
+      <div id="ongoing-groups" class="stage-groups"><div class="empty">조회 중</div></div>
+      <div class="list-heading extra-top"><h3>처리 완료된 의안</h3><span class="pill" id="completed-total">확인 중</span></div>
+      <p class="fine">공포 완료(관련 대안 공포 확인 포함), 대안반영 후 공포 확인 전, 철회·부결·폐기 등을 세부 구분합니다. <b>대안반영폐기 원안과 그 대안 법률의 공포는 서로 다른 기록</b>이며 공포 연결이 검증된 경우에만 '공포 확인'으로 분류합니다.</p>
+      <div class="completion-breakdown" id="completion-breakdown-inline">확인 중</div>
+      <div id="completed-groups" class="stage-groups"><div class="empty">조회 중</div></div>
+      <p class="fine">※ 현 버전의 수집 기본 범위는 <b>제22대 국회의 의원발의 법률안</b>입니다. 정부제출안·위원회 대안 및 법률 공포와 의안의 1:1 연결은 추가 검증·연계가 필요합니다. 상세 심사 및 회의기록은 해당 국회 API에서 실제 반환된 항목만 표시합니다. 개별 원문·검토보고서·심사보고서의 제공 여부는 해당 의안 상세페이지에서 확인하세요.</p>
+    </section>
+    <section class="section" id="law">
+      <div class="section-head"><div><div class="eyebrow dark">OFFICIAL LAW</div><h2>현행 제주특별법</h2></div><a class="soft-link" href="https://www.law.go.kr/법령/제주특별자치도설치및국제자유도시조성을위한특별법" rel="noopener noreferrer" target="_blank">국가법령정보센터 ↗</a></div>
+      <div class="law-card" id="law-card"><div class="empty">확인 중</div></div>
+    </section>
+    <footer><p><strong>비공식 공개 정보 서비스</strong> · 국회·정부 또는 제주특별자치도의 공식 홈페이지가 아닙니다.</p><p>출처: <a href="https://open.assembly.go.kr" target="_blank" rel="noopener noreferrer">열린국회정보</a> · <a href="https://www.law.go.kr" target="_blank" rel="noopener noreferrer">국가법령정보센터</a>. 공개 지연·오류가 있을 수 있으므로 중요 사안은 반드시 공식 원문을 확인하세요.</p><p id="source-status"></p></footer>
+  </main><script src="app.js" defer></script>
+</body></html>
