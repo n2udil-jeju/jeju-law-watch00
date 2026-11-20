@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-20 20:38 KST",
+  "checked_at": "2026-11-20 21:42 KST",
   "bills": [
     {
       "number": "2222797",
@@ -557,43 +557,12 @@
         "PROM_DT": ""
       },
       "details_ok": true,
-      "meetings": [
-        {
-          "committee_type": "소관위원회",
-          "date": "2026-08-24",
-          "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "상정"
-        },
-        {
-          "committee_type": "소관위원회",
-          "date": "2026-08-24",
-          "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "제안설명"
-        },
-        {
-          "committee_type": "소관위원회",
-          "date": "2026-08-24",
-          "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "검토보고"
-        },
-        {
-          "committee_type": "소관위원회",
-          "date": "2026-08-24",
-          "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "대체토론"
-        },
-        {
-          "committee_type": "소관위원회",
-          "date": "2026-08-24",
-          "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "소위회부"
-        }
-      ],
+      "meetings": [],
       "meetings_ok": true,
       "group": "ongoing",
       "completion_kind": "",
-      "stage": "소관위 심사",
-      "rank": 57,
+      "stage": "소관위 상정",
+      "rank": 55,
       "promulgation_date": "",
       "ref_ids": [],
       "reference_checked_at": ""
@@ -2328,6 +2297,14 @@
   "law": null,
   "events": [
     {
+      "kind": "심사단계 변경",
+      "number": "2218132",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "message": "의안번호 2218132 · 소관위 심사 → 소관위 상정",
+      "detected": "2026-11-20 21:42 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1"
+    },
+    {
       "kind": "회의정보 변경",
       "number": "2209705",
       "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
@@ -2483,29 +2460,29 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-20 20:38 KST",
+      "checked_at": "2026-11-20 21:42 KST",
       "integrated_additions": 3
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-20 20:38 KST"
+      "checked_at": "2026-11-20 21:42 KST"
     },
     "schedule": {
       "status": "일부 확인",
-      "checked_at": "2026-11-20 20:38 KST",
+      "checked_at": "2026-11-20 21:42 KST",
       "queries": 4,
       "errors": 4
     },
     "detail": {
       "status": "정상",
-      "checked_at": "2026-11-20 20:38 KST",
+      "checked_at": "2026-11-20 21:42 KST",
       "details": 29,
       "meetings": 26,
       "total": 29
     },
     "alternatives": {
       "status": "공식 API 자동 탐색",
-      "checked_at": "2026-11-20 20:38 KST",
+      "checked_at": "2026-11-20 21:42 KST",
       "details": {
         "2218559": "공식 페이지 재확인",
         "2218430": "공식 페이지 재확인"
@@ -2527,7 +2504,7 @@
     },
     "integrated_bills": {
       "status": "정상",
-      "checked_at": "2026-11-20 20:38 KST"
+      "checked_at": "2026-11-20 21:42 KST"
     }
   },
   "committee_schedules": [],
