@@ -614,8 +614,14 @@ def detect_events(old, bills, law, assembly_ok, law_ok, ts):
         for bill in bills:
             before = prev.get(bill['number'])
             if before is None:
-                changes.append({'kind': '신규 의안', 'number': bill['number'], 'title': bill['title'],
-                    'message': f"의안번호 {bill['number']} · {bill['proposer']} · {bill['date']} 접수 확인",
+                try:
+                    proposed = datetime.strptime(normalize_date(str(bill.get('date') or '')), '%Y-%m-%d').replace(tzinfo=KST)
+                    checked = datetime.strptime(ts[:16], '%Y-%m-%d %H:%M').replace(tzinfo=KST)
+                    historical = (checked-proposed).days > 7
+                except ValueError:
+                    historical = False
+                changes.append({'kind': '기존 의안 편입' if historical else '신규 의안', 'number': bill['number'], 'title': bill['title'],
+                    'message': f"의안번호 {bill['number']} · {bill['proposer']} · {bill['date']} {'과거 제출 의안 수집범위 확대' if historical else '신규 접수 확인'}",
                     'detected': ts, 'url': bill['url']})
             elif before.get('status') != bill.get('status'):
                 changes.append({'kind': '처리결과 변경', 'number': bill['number'], 'title': bill['title'],

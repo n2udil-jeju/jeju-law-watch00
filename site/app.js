@@ -6,7 +6,36 @@ const fmtDate=v=>{if(!v)return '미확인';const x=String(v);return /^\d{8}$/.te
 let bills=[],events=[],committeeSchedules=[],scheduleStatus='대기';
 const NEW_DAYS=7;
 function eventDate(v){const x=String(v||'').replace(' KST','+09:00').replace(' ','T');const d=new Date(x);return Number.isNaN(d.getTime())?null:d}
-function isNewEvent(ev){const date=eventDate(ev?.detected);const delta=date?Date.now()-date.getTime():Infinity;return delta>=0&&delta<NEW_DAYS*86400000}
+function isNewEvent(ev){if(String(ev?.kind||'')==='기존 의안 편입'||isHistoricalImport(ev))return false;const date=eventDate(ev?.detected);const delta=date?Date.now()-date.getTime():Infinity;return delta>=0&&delta<NEW_DAYS*86400000}
+function isHistoricalImport(ev){
+  // 기존 v7이 새로 검색한 과거 발의건을 '신규 의안'으로 잘못 강조한 기록도 보정.
+  if(String(ev?.kind||'')!=='신규 의안')return false;
+  const b=bills.find(x=>String(x.number)===String(ev.number));
+  const proposed=b?.date?eventDate(fmtDate(b.date)+' 00:00 KST'):null;
+  const detected=eventDate(ev.detected);
+  return Boolean(proposed&&detected&&detected.getTime()-proposed.getTime()>7*86400000);
+}
+function proposerType(b){
+  if(b.official_alternative||String(b.proposer_kind||'').includes('위원장')||String(b.proposer||'').includes('위원장'))return 'committee';
+  if(String(b.proposer_kind||'').includes('정부')||String(b.proposer||'').trim()==='정부')return 'government';
+  return 'members';
+}
+function completionDate(b){
+  // 원안이 대안으로 처리된 경우 공포까지 확정되었다면 최종 공포일을 노출기준으로 적용.
+  const candidates=[b.related_alternative?.promulgation_date,b.promulgation_date,
+    b.details?.PROMULGATION_DT,b.details?.PROMUL_DT,b.details?.PROM_DT,
+    b.details?.PROC_DT,b.details?.CMT_PROC_DT];
+  const parsed=candidates.map(fmtDate).filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)).sort();
+  return parsed.length?parsed[parsed.length-1]:'';
+}
+function visibleCompleted(b,days){
+  if(days==='all')return true;
+  const d=completionDate(b);
+  if(!d)return false; // 종결일 미확인은 최근 완료로 가정하지 않는다.
+  const ended=eventDate(d+' 00:00 KST');
+  const delta=ended?Date.now()-ended.getTime():Infinity;
+  return delta>=-86400000&&delta<=Number(days)*86400000;
+}
 function updateForBill(b){return events.find(ev=>isNewEvent(ev)&&(String(ev.number||'')===String(b.number)||Array.isArray(ev.related_bill_numbers)&&ev.related_bill_numbers.map(String).includes(String(b.number))))||null}
 function updateForSchedule(s){return events.find(ev=>isNewEvent(ev)&&String(ev.schedule_id||'')===String(s.id))||null}
 function billUpdateLabel(ev,b){if(!ev)return '';
@@ -34,6 +63,10 @@ function billDetailUrl(b){
   // 위원회 대안: 국회 내부 BILL_ID가 없는 경우 법제처의 *해당 의안번호* 공식 상세페이지로 연결.
   const official=cleanUrl(b.official_detail_url||'');
   if(official){try{const u=new URL(official);if(u.hostname==='opinion.lawmaking.go.kr'&&u.pathname==='/gcom/nsmLmSts/out/'+String(b.number)+'/detailRP')return official;}catch{}}
+  // 국회 내부 BILL_ID가 없더라도 의안번호별 국민참여입법센터 상세정보 제공.
+  // 이 URL 규칙은 실제 정부제출안 제2202231호 공식 페이지로 확인되었음.
+  if(/^22\d{5}$/.test(String(b.number||'')))
+    return 'https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/'+encodeURIComponent(b.number)+'/detailRP';
   return null;
 }
 function addLink(parent,url,text){const safe=cleanUrl(url);if(safe){const a=el('a','soft-link',text);a.href=safe;a.target='_blank';a.rel='noopener noreferrer';parent.append(a)}else parent.append(el('span','muted','공식 개별 페이지 링크 미확인'))}
@@ -63,13 +96,29 @@ function appendDetails(tr,b){const more=el('tr','detail-row');const cell=el('td'
   appendBillLink(panel,b,'국회 의안 상세페이지 열기 (원문·검토보고서 확인) ↗');cell.append(panel);more.append(cell);tr.after(more);return more}
 function billTable(rows){const wrap=el('div','table-scroll');const tbl=el('table');const thead=el('thead');const thr=el('tr');['의안번호','법률안명 / 제안자','최신 단계','국회 처리결과','세부 경과'].forEach(k=>thr.append(el('th','',k)));thead.append(thr);tbl.append(thead);const tbody=el('tbody');rows.sort(displaySort).forEach(b=>{const tr=el('tr');const numCell=el('td','num');appendBillLink(numCell,b,b.number||'—');tr.append(numCell);const nameCell=el('td');const upd=updateForBill(b);if(upd)tr.classList.add('new-bill');
   const strong=el('strong','bill-title');appendBillLink(strong,b,b.title||'—');nameCell.append(strong);
-  if(upd){nameCell.append(el('span','new-mark','NEW'));nameCell.append(el('div','bill-update',billUpdateLabel(upd,b)));}nameCell.append(el('div','muted',`${b.proposer||'제안자 미확인'} · ${fmtDate(b.date)}`));if(b.committee)nameCell.append(el('div','muted',b.committee));
+  if(upd){nameCell.append(el('span','new-mark','NEW'));nameCell.append(el('div','bill-update',billUpdateLabel(upd,b)));}nameCell.append(el('div','muted',`${proposerType(b)==='government'?'정부제출 · ':proposerType(b)==='committee'?'위원회 제안 · ':'의원발의 · '}${b.proposer||'제안자 미확인'} · ${fmtDate(b.date)}`));if(b.committee)nameCell.append(el('div','muted',b.committee));
   if(b.related_alternative?.number){const linked=b.related_alternative;const published=Boolean(linked.promulgation_date&&linked.law_number);const info=el('div','alt-inline',published?`대안 ${linked.number}호 → 법률 제${linked.law_number}호 · ${fmtDate(linked.promulgation_date)} 공포`:`관련 대안 ${linked.number}호 확인 · 공포 여부 확인 중`);nameCell.append(info)}
   if(b.official_alternative&&b.law_number){nameCell.append(el('div','alt-inline',`위원회 대안 · 법률 제${b.law_number}호 공포`))}
   tr.append(nameCell);tr.append(el('td','',stageOf(b)));tr.append(el('td','',b.status||'미확인'));const td=el('td');const button=el('button','details-btn','경과 보기 +');button.type='button';button.setAttribute('aria-expanded','false');button.addEventListener('click',()=>{const on=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!on));button.textContent=on?'경과 보기 +':'접기 −';if(on){if(tr.nextElementSibling?.classList.contains('detail-row'))tr.nextElementSibling.remove()}else appendDetails(tr,b)});td.append(button);td.append(el('div','link-gap'));appendBillLink(td,b,'의안·공포 상세정보 ↗');tr.append(td);tbody.append(tr)});tbl.append(tbody);wrap.append(tbl);return wrap}
 function stageCard(label,rows){const section=el('section','stage-card');const head=el('div','stage-head');head.append(el('h4','',label));head.append(el('span','pill',rows.length+'건'));section.append(head);section.append(billTable(rows));return section}
-function showBills(){const term=$('search').value.trim().toLowerCase(),stage=$('stage').value;const filtered=bills.filter(b=>(!term||[b.number,b.title,b.proposer,b.committee,b.related_alternative?.number].join(' ').toLowerCase().includes(term))&&(!stage||stageOf(b)===stage));const ongoing=filtered.filter(b=>groupOf(b)==='ongoing');const completed=filtered.filter(b=>groupOf(b)==='completed');$('ongoing-total').textContent=ongoing.length+'건';$('completed-total').textContent=completed.length+'건';const open=$('ongoing-groups'),done=$('completed-groups');open.replaceChildren();done.replaceChildren();if(!ongoing.length)open.append(el('div','empty','표시할 진행 중 의안이 없습니다.'));else{const byStage=new Map();for(const b of ongoing){const rank=Number(b.rank??999),name=stageOf(b),key=rank+'|'+name;if(!byStage.has(key))byStage.set(key,{rank,name,rows:[]});byStage.get(key).rows.push(b)}[...byStage.values()].sort((a,b)=>a.rank-b.rank||a.name.localeCompare(b.name)).forEach(g=>open.append(stageCard(g.name,g.rows)))}if(!completed.length)done.append(el('div','empty','표시할 처리 완료 의안이 없습니다.'));else completionOrder.forEach(kind=>{const matches=completed.filter(b=>completionKind(b)===kind);if(matches.length)done.append(stageCard(completionLabels[kind],matches))})}
-function showEvents(){const period=$('recent-period').value;const now=Date.now();const rows=events.filter(v=>period==='all'||(eventDate(v)&&now-eventDate(v.detected).getTime()<=Number(period)*86400000&&now>=eventDate(v.detected).getTime()-86400000));const box=$('events');box.replaceChildren();$('recent-count').textContent=period==='all'?'저장된 전체 · '+rows.length+'건':'최근 '+period+'일 · '+rows.length+'건';if(!rows.length){box.append(el('div','empty','해당 기간에 확인된 변경사항이 없습니다. 첫 정상 수집은 기준자료로만 저장됩니다.'));return}rows.slice(0,100).forEach(v=>{const card=el('article','event'),top=el('div','event-top');top.append(el('span','tag',v.kind||'변경'));if(isNewEvent(v))top.append(el('span','new-mark','NEW'));top.append(el('strong','',v.title||'변경사항'));top.append(el('time','',v.detected||''));card.append(top);card.append(el('p','',v.message||''));const bill=bills.find(x=>String(x.number)===String(v.number));if(bill)appendBillLink(card,bill,'해당 의안 상세 보기 ↗');else if(String(v.kind||'').startsWith('위원회 일정'))addLink(card,v.url,'국회 위원회 일정 확인 ↗');else if(v.kind==='법령 기본정보')addLink(card,v.url,'법령 원문 확인 ↗');else card.append(el('span','muted','의안 상세주소 확인 중'));box.append(card)});if(rows.length>100)box.append(el('p','fine','최근 100건만 화면에 표시됩니다.'))}
+function showBills(){
+  const term=$('search').value.trim().toLowerCase(),stage=$('stage').value,
+        category=$('proposer-type').value, completedRange=$('completed-range').value;
+  const filtered=bills.filter(b=>(!term||[b.number,b.title,b.proposer,b.committee,b.related_alternative?.number].join(' ').toLowerCase().includes(term))
+     &&(!stage||stageOf(b)===stage)&&(!category||proposerType(b)===category));
+  const ongoing=filtered.filter(b=>groupOf(b)==='ongoing');
+  // 검색창에 의안번호를 입력하면 종결 30일이 지난 의안도 검색할 수 있다.
+  const completedAll=filtered.filter(b=>groupOf(b)==='completed');
+  const completed=completedAll.filter(b=>term||visibleCompleted(b,completedRange));
+  $('ongoing-total').textContent=ongoing.length+'건';
+  $('completed-total').textContent=completed.length+'건'+(completed.length!==completedAll.length?' (전체 '+completedAll.length+'건)':'');
+  const open=$('ongoing-groups'),done=$('completed-groups');open.replaceChildren();done.replaceChildren();
+  if(!ongoing.length)open.append(el('div','empty','표시할 진행 중 의안이 없습니다.'));
+  else {const byStage=new Map();for(const b of ongoing){const rank=Number(b.rank??999),name=stageOf(b),key=rank+'|'+name;if(!byStage.has(key))byStage.set(key,{rank,name,rows:[]});byStage.get(key).rows.push(b)}[...byStage.values()].sort((a,b)=>a.rank-b.rank||a.name.localeCompare(b.name)).forEach(g=>open.append(stageCard(g.name,g.rows)))}
+  if(!completed.length)done.append(el('div','empty','최근 '+completedRange+'일에 처리 완료된 의안이 없거나 확인 가능한 처리일이 없습니다. 저장된 전체 기록을 선택하면 과거 의안도 볼 수 있습니다.'));
+  else completionOrder.forEach(kind=>{const matches=completed.filter(b=>completionKind(b)===kind);if(matches.length)done.append(stageCard(completionLabels[kind],matches))});
+}
+function showEvents(){const period=$('recent-period').value;const now=Date.now();const rows=events.filter(v=>period==='all'||(eventDate(v)&&now-eventDate(v.detected).getTime()<=Number(period)*86400000&&now>=eventDate(v.detected).getTime()-86400000));const box=$('events');box.replaceChildren();$('recent-count').textContent=period==='all'?'저장된 전체 · '+rows.length+'건':'최근 '+period+'일 · '+rows.length+'건';if(!rows.length){box.append(el('div','empty','해당 기간에 확인된 변경사항이 없습니다. 첫 정상 수집은 기준자료로만 저장됩니다.'));return}rows.slice(0,100).forEach(v=>{const card=el('article','event'),top=el('div','event-top');top.append(el('span','tag',isHistoricalImport(v)?'기존 의안 편입':(v.kind||'변경')));if(isNewEvent(v))top.append(el('span','new-mark','NEW'));top.append(el('strong','',v.title||'변경사항'));top.append(el('time','',v.detected||''));card.append(top);card.append(el('p','',isHistoricalImport(v)?(v.message||'')+' · 과거에 제출된 의안이 수집 범위 확대로 추가됨':(v.message||'')));const bill=bills.find(x=>String(x.number)===String(v.number));if(bill)appendBillLink(card,bill,'해당 의안 상세 보기 ↗');else if(String(v.kind||'').startsWith('위원회 일정'))addLink(card,v.url,'국회 위원회 일정 확인 ↗');else if(v.kind==='법령 기본정보')addLink(card,v.url,'법령 원문 확인 ↗');else card.append(el('span','muted','의안 상세주소 확인 중'));box.append(card)});if(rows.length>100)box.append(el('p','fine','최근 100건만 화면에 표시됩니다.'))}
 function showCommitteeSchedules(){
   const target=$('committee-schedules');if(!target)return;target.replaceChildren();
   if(scheduleStatus!=='정상'){
@@ -85,12 +134,12 @@ function showCommitteeSchedules(){
     else card.append(el('p','fine','관련 위원회 일정입니다. 개별 제주특별법 의안의 상정 여부는 미확인입니다.'));
     addLink(card,s.url,'국회 위원회 일정 ↗');target.append(card)});
 }
-async function init(){try{const response=await fetch('data/monitor.json?ts='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('공개 데이터 파일 조회 실패');const d=await response.json();bills=Array.isArray(d.bills)?d.bills:[];events=Array.isArray(d.events)?d.events:[];committeeSchedules=Array.isArray(d.committee_schedules)?d.committee_schedules:[];scheduleStatus=d.sources?.schedule?.status||'대기';$('last-check').textContent=d.checked_at?'마지막 수집 시도: '+d.checked_at:'수집 대기';$('count-bills').textContent=bills.length;const committeeBills=bills.filter(b=>b.official_alternative||String(b.proposer_kind||'').includes('위원장')).length;const governmentBills=bills.filter(b=>String(b.proposer_kind||'').includes('정부')||String(b.proposer||'').trim()==='정부').length;const memberBills=bills.length-committeeBills-governmentBills;$('bill-breakdown').textContent=`의원발의 등 ${Math.max(0,memberBills)} · 정부제출 ${governmentBills} · 위원회 대안 ${committeeBills}`;const ongoing=bills.filter(b=>groupOf(b)==='ongoing'),completed=bills.filter(b=>groupOf(b)==='completed');$('count-pending').textContent=ongoing.length;$('count-completed').textContent=completed.length;const legislaturePending=ongoing.filter(b=>Number(b.rank||999)<90).length;$('pending-breakdown').textContent=`국회 계류 ${legislaturePending} · 본회의 의결/정부 이송 등 ${ongoing.length-legislaturePending}`;
+async function init(){try{const response=await fetch('data/monitor.json?ts='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('공개 데이터 파일 조회 실패');const d=await response.json();bills=Array.isArray(d.bills)?d.bills:[];events=Array.isArray(d.events)?d.events:[];committeeSchedules=Array.isArray(d.committee_schedules)?d.committee_schedules:[];scheduleStatus=d.sources?.schedule?.status||'대기';$('last-check').textContent=d.checked_at?'마지막 수집 시도: '+d.checked_at:'수집 대기';$('count-bills').textContent=bills.length;const committeeBills=bills.filter(b=>proposerType(b)==='committee').length;const governmentBills=bills.filter(b=>proposerType(b)==='government').length;const memberBills=bills.length-committeeBills-governmentBills;$('bill-breakdown').textContent=`의원발의 등 ${Math.max(0,memberBills)} · 정부제출 ${governmentBills} · 위원회 대안 ${committeeBills}`;const ongoing=bills.filter(b=>groupOf(b)==='ongoing'),completed=bills.filter(b=>groupOf(b)==='completed');$('count-pending').textContent=ongoing.length;$('count-completed').textContent=completed.length;const legislaturePending=ongoing.filter(b=>Number(b.rank||999)<90).length;$('pending-breakdown').textContent=`국회 계류 ${legislaturePending} · 본회의 의결/정부 이송 등 ${ongoing.length-legislaturePending}`;
   const numbers=Object.fromEntries(completionOrder.map(k=>[k,completed.filter(b=>completionKind(b)===k).length]));const confirmedLawNums=new Set(completed.map(b=>String(b.law_number||b.related_alternative?.law_number||'')).filter(Boolean));const txt=`공포 연계 의안 ${numbers.promulgated}건 (법률번호 확인 ${confirmedLawNums.size}종) · 대안 결과 확인 필요 ${numbers.alternative_unverified}건 · 철회 ${numbers.withdrawn}건 · 부결 ${numbers.rejected}건 · 폐기 ${numbers.discarded}건 · 기타 ${numbers.other}건`;$('completed-breakdown').textContent='처리 완료 세부 · '+txt;$('completion-breakdown-inline').textContent=txt;
   const src=d.sources||{},as=src.assembly?.status||'대기',law=src.law?.status||'대기',detail=src.detail;const note=$('notice');note.className='notice good';note.textContent=as==='정상'&&law==='정상'?'국회·법제처 API를 기반으로 연결되었습니다. 확인된 공개 입법정보를 제공합니다.':'국회·법제처 공식 API 기반 입법정보 서비스입니다. 현재 일부 데이터는 확인 중이며, 확인되지 않았다는 것이 해당 정보가 없다는 뜻은 아닙니다.';
   const altStats=src.alternatives||{};const remain=Array.isArray(altStats.unresolved_originals)?altStats.unresolved_originals.length:0;
   $('source-status').textContent=`수집 상태: 국회 ${as} · 법제처 ${law} · 통합 의안검색 ${src.integrated_bills?.status||'미확인'} · 위원회 일정 ${scheduleStatus} · 심사단계 상세 ${detail?.details??0}/${detail?.total??bills.length}건 · 회의정보 ${detail?.meetings??0}/${detail?.total??bills.length}건 · 대안 연결 확인 ${altStats.linked??0}건 · 연결 미확인 ${remain}건`;
   const opts=[...new Set(bills.map(stageOf))].sort();opts.forEach(x=>{const option=el('option','',x);option.value=x;$('stage').append(option)});
-  const lawInfo=d.law;const box=$('law-card');box.replaceChildren();if(lawInfo){box.append(el('p','law-title',lawInfo.title||'제주특별법'));const info=el('div','law-info');[['공포일',fmtDate(lawInfo.published)],['시행일',fmtDate(lawInfo.effective)],['공포번호',lawInfo.number||'미확인'],['제·개정',lawInfo.amendment||'미확인']].forEach(([k,v])=>{const x=el('span');x.append(el('strong','',k+' '));x.append(document.createTextNode(v));info.append(x)});box.append(info)}else box.append(el('div','empty','법제처의 현행법 정보가 아직 확인되지 않았습니다.'));
-  $('search').addEventListener('input',showBills);$('stage').addEventListener('change',showBills);$('recent-period').addEventListener('change',showEvents);showBills();showEvents();showCommitteeSchedules()}catch(err){$('notice').textContent='사이트 데이터 파일을 읽지 못했습니다. GitHub Actions 배포 상태를 확인하세요.';$('notice').className='notice warn';}}
+  if(Date.now()>=Date.parse('2028-05-30T00:00:00+09:00')){$('term-note').textContent='제22대 국회 임기가 종료되었습니다. 미처리 의안의 임기만료폐기 여부는 국회 공식 처리결과가 확인될 때만 반영합니다.';}const lawInfo=d.law;const box=$('law-card');box.replaceChildren();if(lawInfo){box.append(el('p','law-title',lawInfo.title||'제주특별법'));const info=el('div','law-info');[['공포일',fmtDate(lawInfo.published)],['시행일',fmtDate(lawInfo.effective)],['공포번호',lawInfo.number||'미확인'],['제·개정',lawInfo.amendment||'미확인']].forEach(([k,v])=>{const x=el('span');x.append(el('strong','',k+' '));x.append(document.createTextNode(v));info.append(x)});box.append(info)}else box.append(el('div','empty','법제처의 현행법 정보가 아직 확인되지 않았습니다.'));
+  $('search').addEventListener('input',showBills);$('stage').addEventListener('change',showBills);$('proposer-type').addEventListener('change',showBills);$('completed-range').addEventListener('change',showBills);$('recent-period').addEventListener('change',showEvents);showBills();showEvents();showCommitteeSchedules()}catch(err){$('notice').textContent='사이트 데이터 파일을 읽지 못했습니다. GitHub Actions 배포 상태를 확인하세요.';$('notice').className='notice warn';}}
 init();
