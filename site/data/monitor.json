@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25 05:36 KST",
+  "checked_at": "2026-11-25 06:38 KST",
   "bills": [
     {
       "number": "2222797",
@@ -2587,29 +2587,29 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-25 05:36 KST",
+      "checked_at": "2026-11-25 06:38 KST",
       "integrated_additions": 3
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-25 05:36 KST"
+      "checked_at": "2026-11-25 06:38 KST"
     },
     "schedule": {
       "status": "일부 확인",
-      "checked_at": "2026-11-25 05:36 KST",
+      "checked_at": "2026-11-25 06:38 KST",
       "queries": 4,
       "errors": 4
     },
     "detail": {
       "status": "정상",
-      "checked_at": "2026-11-25 05:36 KST",
+      "checked_at": "2026-11-25 06:38 KST",
       "details": 29,
       "meetings": 26,
       "total": 29
     },
     "alternatives": {
       "status": "공식 API 자동 탐색",
-      "checked_at": "2026-11-25 05:36 KST",
+      "checked_at": "2026-11-25 06:38 KST",
       "details": {
         "2218559": "공식 페이지 재확인",
         "2218430": "공식 페이지 재확인"
@@ -2631,7 +2631,7 @@
     },
     "integrated_bills": {
       "status": "정상",
-      "checked_at": "2026-11-25 05:36 KST"
+      "checked_at": "2026-11-25 06:38 KST"
     }
   },
   "committee_schedules": [],
