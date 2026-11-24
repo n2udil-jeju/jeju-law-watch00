@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25 00:16 KST",
+  "checked_at": "2026-11-25 01:29 KST",
   "bills": [
     {
       "number": "2222797",
@@ -464,7 +464,7 @@
       "stage": "공포 확인",
       "rank": 200,
       "promulgation_date": "2026-06-02",
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP",
       "law_number": "21735",
       "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218559/detailRP"
@@ -523,7 +523,7 @@
       "stage": "공포 확인",
       "rank": 200,
       "promulgation_date": "2026-04-22",
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "official_detail_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP",
       "law_number": "21576",
       "promulgation_source": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218430/detailRP"
@@ -730,7 +730,7 @@
       "rank": 200,
       "promulgation_date": "2026-06-02",
       "ref_ids": [],
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
@@ -905,7 +905,7 @@
       "rank": 200,
       "promulgation_date": "2026-04-22",
       "ref_ids": [],
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "related_alternative": {
         "number": "2218430",
         "promulgation_date": "2026-04-22",
@@ -1086,7 +1086,7 @@
       "rank": 200,
       "promulgation_date": "2026-06-02",
       "ref_ids": [],
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
@@ -1261,7 +1261,7 @@
       "rank": 200,
       "promulgation_date": "2026-04-22",
       "ref_ids": [],
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "related_alternative": {
         "number": "2218430",
         "promulgation_date": "2026-04-22",
@@ -1442,7 +1442,7 @@
       "rank": 200,
       "promulgation_date": "2026-06-02",
       "ref_ids": [],
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
@@ -1635,7 +1635,7 @@
       "rank": 200,
       "promulgation_date": "2026-06-02",
       "ref_ids": [],
-      "reference_checked_at": "2026-11-24 00:19 KST",
+      "reference_checked_at": "2026-11-25 01:29 KST",
       "related_alternative": {
         "number": "2218559",
         "promulgation_date": "2026-06-02",
@@ -2587,37 +2587,37 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-25 00:16 KST",
+      "checked_at": "2026-11-25 01:29 KST",
       "integrated_additions": 3
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-25 00:16 KST"
+      "checked_at": "2026-11-25 01:29 KST"
     },
     "schedule": {
       "status": "일부 확인",
-      "checked_at": "2026-11-25 00:16 KST",
+      "checked_at": "2026-11-25 01:29 KST",
       "queries": 4,
       "errors": 4
     },
     "detail": {
       "status": "정상",
-      "checked_at": "2026-11-25 00:16 KST",
+      "checked_at": "2026-11-25 01:29 KST",
       "details": 29,
       "meetings": 26,
       "total": 29
     },
     "alternatives": {
       "status": "공식 API 자동 탐색",
-      "checked_at": "2026-11-25 00:16 KST",
+      "checked_at": "2026-11-25 01:29 KST",
       "details": {
         "2218559": "공식 페이지 재확인",
         "2218430": "공식 페이지 재확인"
       },
       "linked": 7,
       "detail_reference_scan": {
-        "candidates": 0,
-        "queried": 0,
+        "candidates": 8,
+        "queried": 8,
         "references_found": 0,
         "errors": 0,
         "query_cap": 8
@@ -2631,7 +2631,7 @@
     },
     "integrated_bills": {
       "status": "정상",
-      "checked_at": "2026-11-25 00:16 KST"
+      "checked_at": "2026-11-25 01:29 KST"
     }
   },
   "committee_schedules": [],
