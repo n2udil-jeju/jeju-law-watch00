@@ -33,6 +33,7 @@ LINK_PATH = PATH.parent / "verified_alternatives.json"
 OFFICIAL_HOSTS = {"likms.assembly.go.kr", "open.assembly.go.kr", "www.law.go.kr", "law.go.kr", "www.assembly.go.kr", "opinion.lawmaking.go.kr"}
 SCHEDULE_URL = "https://www.assembly.go.kr/portal/main/main.do#anchor7"
 SCHEDULE_CODES = (("nrsldhjpaemrmolla", "위원회 전체회의"), ("nrkqqbvfanfybishu", "법안심사소위원회"))
+ASSEMBLY_UNIT_CD = '100022'  # 국회 위원회 일정 API의 제22대 국회 필수 대수코드
 BILL_DETAIL_BASE = "https://likms.assembly.go.kr/bill/bi/billDetailPage.do"
 BILL_DETAIL_PATHS = {"/bill/bi/billDetailPage.do", "/bill/billDetail.do"}
 
@@ -604,9 +605,9 @@ def get_committee_schedules(key, bills, at=None):
         for code, kind in SCHEDULE_CODES:
             queries += 1
             try:
-                rows = assembly_query(key, code, {'COMMITTEE_NAME': committee}, max_results=1800)
+                rows = assembly_query(key, code, {'UNIT_CD': ASSEMBLY_UNIT_CD, 'COMMITTEE_NAME': committee}, max_results=1800)
             except (OSError, TimeoutError, ValueError, json.JSONDecodeError) as exc:
-                errors.append(code + ':' + committee + ':' + type(exc).__name__)
+                errors.append(code + ':' + committee + ':' + type(exc).__name__ + ':' + re.sub(r'[\r\n]+', ' ', str(exc))[:120])
                 continue
             for row in rows:
                 normalized = normalize_schedule(row, kind)
@@ -656,18 +657,76 @@ def detect_schedule_events(old, schedules, ts, source_ok):
                         'detected':ts, 'url':SCHEDULE_URL})
     return changes
 
-def get_law(oc):
-    raw = request('https://www.law.go.kr/DRF/lawSearch.do',
-                  {'OC': oc, 'target': 'law', 'type': 'XML', 'query': TITLE, 'display': 100, 'sort': 'ddes'})
-    root = ET.fromstring(raw)
-    matches = [x for x in root.iter() if (x.findtext('법령명한글') or '').strip() == TITLE]
-    if not matches:
-        raise ValueError('법제처 현행법령 기본정보를 찾지 못함')
-    record = matches[0]
-    return {'title': TITLE, 'published': record.findtext('공포일자') or '',
-            'effective': record.findtext('시행일자') or '', 'number': record.findtext('공포번호') or '',
-            'amendment': record.findtext('제개정구분명') or '', 'serial': record.findtext('법령일련번호') or '',
+def _law_name(value):
+    """국가법령정보센터 법령명의 공백 차이는 검색 비교에서만 무시한다."""
+    return re.sub(r'\s+', '', str(value or ''))
+
+
+def _law_record_to_public(record):
+    """목록 응답 중 제주특별법과 정확히 일치하는 법령만 선택한다."""
+    name = record.get('법령명한글') or record.get('법령명') or ''
+    if _law_name(name) != _law_name(TITLE):
+        return None
+    return {'title': TITLE, 'published': str(record.get('공포일자') or ''),
+            'effective': str(record.get('시행일자') or ''),
+            'number': str(record.get('공포번호') or ''),
+            'amendment': str(record.get('제개정구분명') or ''),
+            'serial': str(record.get('법령일련번호') or ''),
             'url': 'https://www.law.go.kr/법령/제주특별자치도설치및국제자유도시조성을위한특별법'}
+
+
+def _parse_law_xml(raw):
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError as exc:
+        # 본문 일부(개인 인증값, URL, 화면 오류 등)가 로그에 찍히지 않게 한다.
+        raise ValueError('법제처 XML 형식 오류: ' + str(exc)) from exc
+    for node in root.iter():
+        name = (node.findtext('법령명한글') or node.findtext('법령명') or '').strip()
+        if _law_name(name) == _law_name(TITLE):
+            record = {k: node.findtext(k) for k in
+                      ('법령명한글', '법령명', '공포일자', '시행일자', '공포번호', '제개정구분명', '법령일련번호')}
+            return _law_record_to_public(record)
+    raise ValueError('법제처 XML 응답에서 제주특별법 법령을 찾지 못함')
+
+
+def _parse_law_json(raw):
+    try:
+        obj = json.loads(raw.decode('utf-8-sig'))
+    except (UnicodeError, json.JSONDecodeError) as exc:
+        raise ValueError('법제처 JSON 형식 오류') from exc
+    # 국가법령정보센터 목록 JSON: {"LawSearch": {"law": [...]}} (단건은 dict일 수 있음)
+    if not isinstance(obj, dict):
+        raise ValueError('법제처 JSON 구조 오류')
+    found = obj.get('LawSearch', obj)
+    if isinstance(found, dict):
+        found = found.get('law', found.get('법령', found))
+    if isinstance(found, dict):
+        found = [found]
+    if not isinstance(found, list):
+        raise ValueError('법제처 JSON 목록 구조 오류')
+    for record in found:
+        if isinstance(record, dict):
+            value = _law_record_to_public(record)
+            if value:
+                return value
+    raise ValueError('법제처 JSON 응답에서 제주특별법 법령을 찾지 못함')
+
+
+def get_law(oc):
+    """XML 응답이 손상되면 공식 JSON API로 재조회한다. 성공 못 하면 오류를 유지한다."""
+    params = {'OC': oc, 'target': 'law', 'query': TITLE, 'display': 100, 'sort': 'ddes'}
+    base = 'https://www.law.go.kr/DRF/lawSearch.do'
+    raw = request(base, {**params, 'type': 'XML'})
+    try:
+        return _parse_law_xml(raw)
+    except ValueError as xml_exc:
+        # XML 응답 오류 페이지를 법령 데이터라고 오인하지 않고 JSON으로 한 번만 재시도.
+        raw_json = request(base, {**params, 'type': 'JSON'})
+        try:
+            return _parse_law_json(raw_json)
+        except ValueError as json_exc:
+            raise ValueError(f'{xml_exc}; JSON 재조회도 실패: {json_exc}. LAW_OC 인증값·허용IP·API 응답 형식 확인 필요') from json_exc
 
 
 def detect_events(old, bills, law, assembly_ok, law_ok, ts):
