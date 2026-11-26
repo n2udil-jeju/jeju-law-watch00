@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26 15:41 KST",
+  "checked_at": "2026-11-26 16:29 KST",
   "bills": [
     {
       "number": "2222797",
@@ -113,43 +113,50 @@
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-17",
           "name": "제439회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-17",
           "name": "제439회 국회(정기회) 제3차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-17",
           "name": "제439회 국회(정기회) 제3차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -195,43 +202,50 @@
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-17",
           "name": "제439회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-17",
           "name": "제439회 국회(정기회) 제3차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-17",
           "name": "제439회 국회(정기회) 제3차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -316,25 +330,29 @@
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -380,25 +398,29 @@
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-11-16",
           "name": "제439회 국회(정기회) 제11차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -443,19 +465,22 @@
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "법제사법위원회",
           "date": "2026-04-22",
           "name": "제434회 국회(임시회) 제3차 전체회의",
-          "result": "상정/제안설명/검토보고/대체토론/의결"
+          "result": "상정/제안설명/검토보고/대체토론/의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -502,19 +527,22 @@
           "committee_type": "법제사법위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제2차 전체회의",
-          "result": "상정/제안설명/검토보고/대체토론/의결"
+          "result": "상정/제안설명/검토보고/대체토론/의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제5차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제5차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -562,31 +590,36 @@
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -632,13 +665,15 @@
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -684,43 +719,50 @@
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -777,31 +819,36 @@
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -847,55 +894,64 @@
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제5차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제5차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제8차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제8차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -952,31 +1008,36 @@
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-08-24",
           "name": "제438회 국회(임시회) 제1차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1022,61 +1083,71 @@
           "committee_type": "소관위원회",
           "date": "2026-03-10",
           "name": "제433회 국회(임시회) 제1차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-10",
           "name": "제433회 국회(임시회) 제1차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-10",
           "name": "제433회 국회(임시회) 제1차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-10",
           "name": "제433회 국회(임시회) 제1차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-10",
           "name": "제433회 국회(임시회) 제1차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1133,31 +1204,36 @@
           "committee_type": "소관위원회",
           "date": "2026-02-05",
           "name": "제432회 국회(임시회) 제1차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-02-05",
           "name": "제432회 국회(임시회) 제1차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-02-05",
           "name": "제432회 국회(임시회) 제1차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-02-05",
           "name": "제432회 국회(임시회) 제1차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-02-05",
           "name": "제432회 국회(임시회) 제1차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1203,55 +1279,64 @@
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-19",
           "name": "제433회 국회(임시회) 제4차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제5차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제5차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제8차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-04-17",
           "name": "제434회 국회(임시회) 제8차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1308,37 +1393,43 @@
           "committee_type": "소관위원회",
           "date": "2025-11-20",
           "name": "제429회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1384,55 +1475,64 @@
           "committee_type": "소관위원회",
           "date": "2025-11-20",
           "name": "제429회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1489,37 +1589,43 @@
           "committee_type": "소관위원회",
           "date": "2025-11-20",
           "name": "제429회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1565,67 +1671,78 @@
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-11-20",
           "name": "제429회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1682,61 +1799,71 @@
           "committee_type": "소관위원회",
           "date": "2025-08-27",
           "name": "제428회 국회(임시회) 제1차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-27",
           "name": "제428회 국회(임시회) 제1차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-27",
           "name": "제428회 국회(임시회) 제1차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-27",
           "name": "제428회 국회(임시회) 제1차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-27",
           "name": "제428회 국회(임시회) 제1차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1782,73 +1909,99 @@
           "committee_type": "소관위원회",
           "date": "2025-07-01",
           "name": "제426회 국회(임시회) 제2차 전체회의",
-          "result": "검토보고"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-07-01",
           "name": "제426회 국회(임시회) 제2차 전체회의",
-          "result": "대체토론"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-07-01",
           "name": "제426회 국회(임시회) 제2차 전체회의",
-          "result": "소위회부"
+          "result": "검토보고",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "대체토론",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-07-08",
           "name": "제427회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-11-20",
           "name": "제429회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -1892,75 +2045,122 @@
       "meetings": [
         {
           "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "상정",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "제안설명",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "검토보고",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "대체토론",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "소위회부",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
           "date": "2025-07-08",
           "name": "제427회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-11-20",
           "name": "제429회 국회(정기회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-26",
           "name": "제433회 국회(임시회) 제3차 전체회의",
-          "result": "의결"
+          "result": "의결",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -2017,73 +2217,92 @@
           "committee_type": "소관위원회",
           "date": "2025-07-01",
           "name": "제426회 국회(임시회) 제2차 전체회의",
-          "result": "제안설명"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-07-01",
           "name": "제426회 국회(임시회) 제2차 전체회의",
-          "result": "검토보고"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-07-01",
           "name": "제426회 국회(임시회) 제2차 전체회의",
-          "result": "대체토론"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-07-01",
           "name": "제426회 국회(임시회) 제2차 전체회의",
-          "result": "소위회부"
+          "result": "대체토론",
+          "url": ""
+        },
+        {
+          "committee_type": "소관위원회",
+          "date": "2025-07-01",
+          "name": "제426회 국회(임시회) 제2차 전체회의",
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-07-08",
           "name": "제427회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2025-08-26",
           "name": "제428회 국회(임시회) 제1차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -2129,61 +2348,71 @@
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-11",
           "name": "제433회 국회(임시회) 제1차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-16",
           "name": "제433회 국회(임시회) 제2차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-17",
           "name": "제433회 국회(임시회) 제3차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2026-03-24",
           "name": "제433회 국회(임시회) 제4차 소위회의",
-          "result": "축조심사"
+          "result": "축조심사",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -2219,31 +2448,36 @@
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-11-20",
           "name": "제418회 국회(정기회) 제12차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -2288,31 +2522,36 @@
           "committee_type": "소관위원회",
           "date": "2024-09-02",
           "name": "제418회 국회(정기회) 제1차 전체회의",
-          "result": "상정"
+          "result": "상정",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-09-02",
           "name": "제418회 국회(정기회) 제1차 전체회의",
-          "result": "제안설명"
+          "result": "제안설명",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-09-02",
           "name": "제418회 국회(정기회) 제1차 전체회의",
-          "result": "검토보고"
+          "result": "검토보고",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-09-02",
           "name": "제418회 국회(정기회) 제1차 전체회의",
-          "result": "대체토론"
+          "result": "대체토론",
+          "url": ""
         },
         {
           "committee_type": "소관위원회",
           "date": "2024-09-02",
           "name": "제418회 국회(정기회) 제1차 전체회의",
-          "result": "소위회부"
+          "result": "소위회부",
+          "url": ""
         }
       ],
       "meetings_ok": true,
@@ -2327,6 +2566,951 @@
   ],
   "law": null,
   "events": [
+    {
+      "kind": "심사결과 변경",
+      "number": "2221642",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221642",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221642",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221642",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-17|제439회 국회(정기회) 제3차 소위회의",
+      "message": "2026-11-17 · 소관위원회 · 제439회 국회(정기회) 제3차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221642",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-17|제439회 국회(정기회) 제3차 소위회의",
+      "message": "2026-11-17 · 소관위원회 · 제439회 국회(정기회) 제3차 소위회의 · 의결 → 축조심사",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q9O0P9N1O7K3K4I2H9H3G2G7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221583",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221583",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221583",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221583",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-17|제439회 국회(정기회) 제3차 소위회의",
+      "message": "2026-11-17 · 소관위원회 · 제439회 국회(정기회) 제3차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2221583",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-17|제439회 국회(정기회) 제3차 소위회의",
+      "message": "2026-11-17 · 소관위원회 · 제439회 국회(정기회) 제3차 소위회의 · 의결 → 축조심사",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2F6G0E9F1D6E1M9K4K2J4K3I5I3R0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2220553",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G6G0E8D0D3L1M6K3L1J4I6I5Q4R5"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2220553",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G6G0E8D0D3L1M6K3L1J4I6I5Q4R5"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2220553",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G6G0E8D0D3L1M6K3L1J4I6I5Q4R5"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2219514",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2S6R0Z6A2Z5X1V3E1D3D1C7A7X3V2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2219514",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2S6R0Z6A2Z5X1V3E1D3D1C7A7X3V2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2219514",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-11-16|제439회 국회(정기회) 제11차 전체회의",
+      "message": "2026-11-16 · 소관위원회 · 제439회 국회(정기회) 제11차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2S6R0Z6A2Z5X1V3E1D3D1C7A7X3V2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2218559",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "meeting_key": "소관위원회|2026-03-26|제433회 국회(임시회) 제3차 전체회의",
+      "message": "2026-03-26 · 소관위원회 · 제433회 국회(임시회) 제3차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_O2Z6G0Y3Z2P5Q2A2N4M4M2V3P9G9R3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2218430",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안(대안)",
+      "meeting_key": "소관위원회|2026-04-17|제434회 국회(임시회) 제5차 전체회의",
+      "message": "2026-04-17 · 소관위원회 · 제434회 국회(임시회) 제5차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_P2M6Y0Z4N1O7K2D0V0H3F4A6H3K4E6"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2218132",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2218132",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2218132",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2218132",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2E6C0D4Y0X5X1V5W1V1V0D0B8C3A1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217447",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_B2C6A0B3Z0X4Y1G3G3E1G0E3E1C5D3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217410",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z6X0Y3F1G1F1D6D0C8C3Y5Y6X0Y8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217410",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 축조심사",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z6X0Y3F1G1F1D6D0C8C3Y5Y6X0Y8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217410",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-26|제433회 국회(임시회) 제3차 전체회의",
+      "message": "2026-03-26 · 소관위원회 · 제433회 국회(임시회) 제3차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z6X0Y3F1G1F1D6D0C8C3Y5Y6X0Y8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217324",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2Y6Z0X3W0W6S1T4R5Q1Q0O4P3X0V1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217324",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2Y6Z0X3W0W6S1T4R5Q1Q0O4P3X0V1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217324",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2Y6Z0X3W0W6S1T4R5Q1Q0O4P3X0V1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217324",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2Y6Z0X3W0W6S1T4R5Q1Q0O4P3X0V1"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-04-17|제434회 국회(임시회) 제5차 전체회의",
+      "message": "2026-04-17 · 소관위원회 · 제434회 국회(임시회) 제5차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2217211",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-04-17|제434회 국회(임시회) 제8차 소위회의",
+      "message": "2026-04-17 · 소관위원회 · 제434회 국회(임시회) 제8차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_A2A6X0V3V0T3U1S4T5B1B2A0A8Z9X3"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216750",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q1O3P0N1O5W4W7U0V8T7S2S7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216750",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q1O3P0N1O5W4W7U0V8T7S2S7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216750",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q1O3P0N1O5W4W7U0V8T7S2S7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216750",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-08-24|제438회 국회(임시회) 제1차 전체회의",
+      "message": "2026-08-24 · 소관위원회 · 제438회 국회(임시회) 제1차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2R6P0Q1O3P0N1O5W4W7U0V8T7S2S7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-10|제433회 국회(임시회) 제1차 전체회의",
+      "message": "2026-03-10 · 소관위원회 · 제433회 국회(임시회) 제1차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-10|제433회 국회(임시회) 제1차 전체회의",
+      "message": "2026-03-10 · 소관위원회 · 제433회 국회(임시회) 제1차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-10|제433회 국회(임시회) 제1차 전체회의",
+      "message": "2026-03-10 · 소관위원회 · 제433회 국회(임시회) 제1차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-10|제433회 국회(임시회) 제1차 전체회의",
+      "message": "2026-03-10 · 소관위원회 · 제433회 국회(임시회) 제1차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 축조심사",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2216064",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-26|제433회 국회(임시회) 제3차 전체회의",
+      "message": "2026-03-26 · 소관위원회 · 제433회 국회(임시회) 제3차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Z2H6I0G1H1F2E1E5M4M0L5M2K4K6I8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2214954",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-02-05|제432회 국회(임시회) 제1차 전체회의",
+      "message": "2026-02-05 · 소관위원회 · 제432회 국회(임시회) 제1차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2U5C1B1C2A4A1Y5Z1H2I1G7H8F2F4"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2214954",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-02-05|제432회 국회(임시회) 제1차 전체회의",
+      "message": "2026-02-05 · 소관위원회 · 제432회 국회(임시회) 제1차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2U5C1B1C2A4A1Y5Z1H2I1G7H8F2F4"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2214954",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-02-05|제432회 국회(임시회) 제1차 전체회의",
+      "message": "2026-02-05 · 소관위원회 · 제432회 국회(임시회) 제1차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2U5C1B1C2A4A1Y5Z1H2I1G7H8F2F4"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2214954",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-02-05|제432회 국회(임시회) 제1차 전체회의",
+      "message": "2026-02-05 · 소관위원회 · 제432회 국회(임시회) 제1차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_U2U5C1B1C2A4A1Y5Z1H2I1G7H8F2F4"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-19|제433회 국회(임시회) 제4차 전체회의",
+      "message": "2026-03-19 · 소관위원회 · 제433회 국회(임시회) 제4차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-04-17|제434회 국회(임시회) 제5차 전체회의",
+      "message": "2026-04-17 · 소관위원회 · 제434회 국회(임시회) 제5차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213920",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-04-17|제434회 국회(임시회) 제8차 소위회의",
+      "message": "2026-04-17 · 소관위원회 · 제434회 국회(임시회) 제8차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_L2J5K0S9T3R0R1P0O5P8X1X7V7W5U9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213827",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_I2J5H0H8G2H9C1B4B1Z5A0Y0H9H3F9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213814",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2R5R0Z8A2Y9Z1Y4W1W4E2F2D3C4C7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213814",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 축조심사",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2R5R0Z8A2Y9Z1Y4W1W4E2F2D3C4C7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213814",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-26|제433회 국회(임시회) 제3차 전체회의",
+      "message": "2026-03-26 · 소관위원회 · 제433회 국회(임시회) 제3차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2R5R0Z8A2Y9Z1Y4W1W4E2F2D3C4C7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2213781",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_B2I5J1I0I2G7H1F0N0O6M5N4L9L8K2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2211840",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-26|제428회 국회(임시회) 제1차 소위회의",
+      "message": "2025-08-26 · 소관위원회 · 제428회 국회(임시회) 제1차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2211840",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2211840",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 축조심사",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2211840",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-26|제433회 국회(임시회) 제3차 전체회의",
+      "message": "2026-03-26 · 소관위원회 · 제433회 국회(임시회) 제3차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_H2G5G0E7F0D8E1M0M4K7J2K9I5I0R5"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2210719",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-27|제428회 국회(임시회) 제1차 전체회의",
+      "message": "2025-08-27 · 소관위원회 · 제428회 국회(임시회) 제1차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2210719",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-27|제428회 국회(임시회) 제1차 전체회의",
+      "message": "2025-08-27 · 소관위원회 · 제428회 국회(임시회) 제1차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2210719",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-27|제428회 국회(임시회) 제1차 전체회의",
+      "message": "2025-08-27 · 소관위원회 · 제428회 국회(임시회) 제1차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2210719",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-27|제428회 국회(임시회) 제1차 전체회의",
+      "message": "2025-08-27 · 소관위원회 · 제428회 국회(임시회) 제1차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2210719",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_E2C5D0Y4Z1X0Y1W8X1V1D1E5C8C5B9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2209705",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2209705",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2209705",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2209705",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2209705",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-26|제428회 국회(임시회) 제1차 소위회의",
+      "message": "2025-08-26 · 소관위원회 · 제428회 국회(임시회) 제1차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2209705",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_J2H4I0G7H1F6F0O9M4M0L1L8K8K8S8"
+    },
+    {
+      "kind": "기존 회의기록 편입",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 공식 심사결과: 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "기존 회의기록 편입",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 공식 심사결과: 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "기존 회의기록 편입",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 공식 심사결과: 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "기존 회의기록 편입",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 공식 심사결과: 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "기존 회의기록 편입",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 공식 심사결과: 소위회부",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-26|제428회 국회(임시회) 제1차 소위회의",
+      "message": "2025-08-26 · 소관위원회 · 제428회 국회(임시회) 제1차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 의결 → 축조심사",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207389",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-26|제433회 국회(임시회) 제3차 전체회의",
+      "message": "2026-03-26 · 소관위원회 · 제433회 국회(임시회) 제3차 전체회의 · 의결 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2U4C1A2B1Z9A1Y6Z1G4F5G4E7F6D9"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207167",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207167",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207167",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207167",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-07-01|제426회 국회(임시회) 제2차 전체회의",
+      "message": "2025-07-01 · 소관위원회 · 제426회 국회(임시회) 제2차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207167",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2025-08-26|제428회 국회(임시회) 제1차 소위회의",
+      "message": "2025-08-26 · 소관위원회 · 제428회 국회(임시회) 제1차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2207167",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_Y2Z4X1Y2W1X9V1D6E1C6C3B0C9A6A7"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2203108",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2203108",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2203108",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2203108",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2203108",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2026-03-24|제433회 국회(임시회) 제4차 소위회의",
+      "message": "2026-03-24 · 소관위원회 · 제433회 국회(임시회) 제4차 소위회의 · 축조심사 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_F2F4E0M8M1L6M0K9K5I4R0R7P1Q8O2"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2202231",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": ""
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2202231",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": ""
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2202231",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": ""
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2202231",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-11-20|제418회 국회(정기회) 제12차 전체회의",
+      "message": "2024-11-20 · 소관위원회 · 제418회 국회(정기회) 제12차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": ""
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2200931",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-09-02|제418회 국회(정기회) 제1차 전체회의",
+      "message": "2024-09-02 · 소관위원회 · 제418회 국회(정기회) 제1차 전체회의 · 소위회부 → 상정",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2S4P0Y6X1W7V0B9C5B2K0J8G7C0B0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2200931",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-09-02|제418회 국회(정기회) 제1차 전체회의",
+      "message": "2024-09-02 · 소관위원회 · 제418회 국회(정기회) 제1차 전체회의 · 소위회부 → 제안설명",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2S4P0Y6X1W7V0B9C5B2K0J8G7C0B0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2200931",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-09-02|제418회 국회(정기회) 제1차 전체회의",
+      "message": "2024-09-02 · 소관위원회 · 제418회 국회(정기회) 제1차 전체회의 · 소위회부 → 검토보고",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2S4P0Y6X1W7V0B9C5B2K0J8G7C0B0"
+    },
+    {
+      "kind": "심사결과 변경",
+      "number": "2200931",
+      "title": "제주특별자치도 설치 및 국제자유도시 조성을 위한 특별법 일부개정법률안",
+      "meeting_key": "소관위원회|2024-09-02|제418회 국회(정기회) 제1차 전체회의",
+      "message": "2024-09-02 · 소관위원회 · 제418회 국회(정기회) 제1차 전체회의 · 소위회부 → 대체토론",
+      "detected": "2026-11-26 16:29 KST",
+      "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_T2S4P0Y6X1W7V0B9C5B2K0J8G7C0B0"
+    },
     {
       "kind": "회의정보 변경",
       "number": "2213827",
@@ -2587,29 +3771,29 @@
   "sources": {
     "assembly": {
       "status": "정상",
-      "checked_at": "2026-11-26 15:41 KST",
+      "checked_at": "2026-11-26 16:29 KST",
       "integrated_additions": 3
     },
     "law": {
       "status": "조회 오류",
-      "checked_at": "2026-11-26 15:41 KST"
+      "checked_at": "2026-11-26 16:29 KST"
     },
     "schedule": {
       "status": "일부 확인",
-      "checked_at": "2026-11-26 15:41 KST",
+      "checked_at": "2026-11-26 16:29 KST",
       "queries": 4,
       "errors": 4
     },
     "detail": {
       "status": "정상",
-      "checked_at": "2026-11-26 15:41 KST",
+      "checked_at": "2026-11-26 16:29 KST",
       "details": 29,
       "meetings": 26,
       "total": 29
     },
     "alternatives": {
       "status": "공식 API 자동 탐색",
-      "checked_at": "2026-11-26 15:41 KST",
+      "checked_at": "2026-11-26 16:29 KST",
       "details": {
         "2218559": "공식 페이지 재확인",
         "2218430": "공식 페이지 재확인"
@@ -2631,7 +3815,7 @@
     },
     "integrated_bills": {
       "status": "정상",
-      "checked_at": "2026-11-26 15:41 KST"
+      "checked_at": "2026-11-26 16:29 KST"
     }
   },
   "committee_schedules": [],
