@@ -6,7 +6,7 @@ const fmtDate=v=>{if(!v)return '미확인';const x=String(v);return /^\d{8}$/.te
 let bills=[],events=[],committeeSchedules=[],scheduleStatus='대기';
 const NEW_DAYS=7;
 function eventDate(v){const x=String(v||'').replace(' KST','+09:00').replace(' ','T');const d=new Date(x);return Number.isNaN(d.getTime())?null:d}
-function isNewEvent(ev){if(String(ev?.kind||'')==='기존 의안 편입'||isHistoricalImport(ev))return false;const date=eventDate(ev?.detected);const delta=date?Date.now()-date.getTime():Infinity;return delta>=0&&delta<NEW_DAYS*86400000}
+function isNewEvent(ev){if(['기존 의안 편입','기존 회의기록 편입'].includes(String(ev?.kind||''))||isHistoricalImport(ev))return false;const date=eventDate(ev?.detected);const delta=date?Date.now()-date.getTime():Infinity;return delta>=0&&delta<NEW_DAYS*86400000}
 function isHistoricalImport(ev){
   // 기존 v7이 새로 검색한 과거 발의건을 '신규 의안'으로 잘못 강조한 기록도 보정.
   if(String(ev?.kind||'')!=='신규 의안')return false;
@@ -37,6 +37,9 @@ function visibleCompleted(b,days){
   return delta>=-86400000&&delta<=Number(days)*86400000;
 }
 function updateForBill(b){return events.find(ev=>isNewEvent(ev)&&(String(ev.number||'')===String(b.number)||Array.isArray(ev.related_bill_numbers)&&ev.related_bill_numbers.map(String).includes(String(b.number))))||null}
+function meetingIdentity(m){return ['committee_type','date','name'].map(k=>String(m?.[k]||'').trim().replace(/\s+/g,' ')).join('|')}
+function meetingUpdate(b,m){return events.find(ev=>isNewEvent(ev)&&String(ev.number||'')===String(b.number)&&
+    String(ev.meeting_key||'')===meetingIdentity(m))||null}
 function updateForSchedule(s){return events.find(ev=>isNewEvent(ev)&&String(ev.schedule_id||'')===String(s.id))||null}
 function billUpdateLabel(ev,b){if(!ev)return '';
   if(String(ev.kind||'').startsWith('위원회 일정')){
@@ -86,7 +89,14 @@ function appendDetails(tr,b){const more=el('tr','detail-row');const cell=el('td'
       rel.append(el('p','fine','원안별 반영 범위는 대안 원문과 심사보고서를 비교해 확인해야 합니다.'));panel.append(rel)}
   }
   panel.append(el('h4','','상임위·법사위 회의정보'));
-  if(b.meetings_ok&&b.meetings?.length){b.meetings.forEach(m=>panel.append(el('p','meeting-line',`${m.date?fmtDate(m.date)+' · ':''}${m.committee_type} · ${m.name} · ${m.result}`)))}else panel.append(el('p','fine','해당 의안의 회의일·심사결과가 자동 확인되지 않았습니다. 회의 개최가 곧 의결을 뜻하지 않습니다.'));
+  if(b.meetings_ok&&b.meetings?.length){b.meetings.forEach(m=>{
+    const line=el('p','meeting-line');const upd=meetingUpdate(b,m);
+    const label=`${m.date?fmtDate(m.date)+' · ':''}${m.committee_type} · ${m.name} · ${m.result}`;
+    line.append(el(upd?'strong':'span','',label));
+    if(upd)line.append(el('span','new-mark','NEW'));
+    if(m.url)addLink(line,m.url,'공식 회의자료 ↗');
+    panel.append(line)
+  })}else panel.append(el('p','fine','해당 의안의 회의일·심사결과가 자동 확인되지 않았습니다. 회의 개최가 곧 의결을 뜻하지 않습니다.'));
   const rel=committeeSchedules.filter(item=>(item.related_bill_numbers||[]).map(String).includes(String(b.number)));
   if(rel.length){panel.append(el('h4','','관련 위원회 예정 일정'));
     panel.append(el('p','fine','회의가 예정되었다는 사실만으로 해당 의안의 상정·심사·의결이 확정된 것은 아닙니다.'));

@@ -144,8 +144,61 @@ def date_value(row, *keys):
     return ''
 
 
+def meeting_identity(meeting):
+    """동일 의안의 동일 회의 기록을 식별. 처리결과는 키에 넣지 않아 결과 갱신을 감지한다."""
+    fields = ('committee_type', 'date', 'name')
+    return '|'.join(' '.join(str(meeting.get(k) or '').split()) for k in fields)
+
+
+def known_meeting_result(meeting):
+    """결과가 실제 공개된 경우에만 심사결과 알림을 허용."""
+    result = str(meeting.get('result') or '').strip()
+    return bool(result and result not in ('결과 확인 필요', '미확인', '-', '없음', ''))
+
+
+def meeting_changes(before, after, bill, ts):
+    """회의 신설과 기존 회의의 처리결과 변경을 나눠 수집한다.
+
+    이전 API가 정상 조회됐다는 확인이 없으면 첫 조회는 기준자료로 간주한다.
+    """
+    if not before.get('meetings_ok') or not after.get('meetings_ok'):
+        return []
+    old = {meeting_identity(m): m for m in before.get('meetings', []) if meeting_identity(m)}
+    changes = []
+    for m in after.get('meetings', []):
+        key = meeting_identity(m)
+        if not key:
+            continue
+        prior = old.get(key)
+        confirmed = known_meeting_result(m)
+        if prior is None:
+            # 오래된 회의 기록을 새로 편입했을 때 NEW 오표시 방지.
+            try:
+                meeting_date = datetime.strptime(normalize_date(m.get('date') or ''), '%Y-%m-%d')
+                checked = datetime.strptime(ts[:10], '%Y-%m-%d')
+                historical = (checked - meeting_date).days > 7
+            except ValueError:
+                historical = True
+            kind = ('기존 회의기록 편입' if historical else
+                    '심사결과 신규 확인' if confirmed else '회의기록 신규 확인')
+            message = (f"{m.get('date') or '날짜 미확인'} · {m.get('committee_type') or '위원회'} · "
+                       f"{m.get('name') or '회의'} · "
+                       f"{'공식 심사결과: ' + m['result'] if confirmed else '회의기록 확인, 심사결과 미확인'}")
+        elif str(prior.get('result') or '') != str(m.get('result') or '') and confirmed:
+            kind = '심사결과 변경'
+            message = (f"{m.get('date') or '날짜 미확인'} · {m.get('committee_type') or '위원회'} · "
+                       f"{m.get('name') or '회의'} · "
+                       f"{prior.get('result') or '미확인'} → {m.get('result')}")
+        else:
+            continue
+        changes.append({'kind': kind, 'number': bill['number'], 'title': bill['title'],
+                        'meeting_key': key, 'message': message, 'detected': ts,
+                        'url': m.get('url') or bill.get('url') or ''})
+    return changes
+
+
 def normalize_meetings(rows, committee):
-    """확인 가능한 회의 일자/명칭만 보여 줌. '회의 개최'와 '안건 의결'을 혼동하지 않음."""
+    """의안별 공식 회의 기록만 표시. 회의 이름에서 의결을 추측하지 않는다."""
     meetings = []
     for row in rows:
         date = date_value(row, 'CONF_DATE', 'CONF_DT', 'MEETING_DATE', 'MTG_DT', 'JRCMIT_CONF_DT', 'LWCMIT_CONF_DT', 'LWCMT_CONF_DT')
@@ -153,9 +206,14 @@ def normalize_meetings(rows, committee):
         result = date_value(row, 'CONF_RSLT', 'PROC_RESULT', 'JUDGE_RESULT', 'RSLT', 'JRCMIT_CONF_RSLT', 'LWCMIT_CONF_RSLT', 'LWCMT_CONF_RSLT')
         if not date and not name:
             continue
-        meetings.append({'committee_type': committee, 'date': date, 'name': name or '회의 정보',
-                         'result': result or '결과 확인 필요'})
-    return meetings[-12:]
+        label = committee
+        if ('소위원회' in name or '법안소위' in name or '법안심사소위' in name) and committee == '소관위원회':
+            label = '법안심사소위원회'
+        raw_url = date_value(row, 'DETAIL_LINK', 'CONF_LINK', 'CONF_URL', 'LINK_URL')
+        meetings.append({'committee_type': label, 'date': date, 'name': name or '회의 정보',
+                         'result': result or '결과 확인 필요',
+                         'url': raw_url if official_evidence(raw_url) else ''})
+    return meetings[-30:]
 
 
 def get_details(key, bill):
@@ -181,13 +239,18 @@ def get_details(key, bill):
         for code, label in [('BILLJUDGECONF', '소관위원회'), ('BILLLWJUDGECONF', '법제사법위원회')]:
             try:
                 rows = assembly_query(key, code, {'BILL_ID': bill['bill_id']}, 100)
-                all_meetings.extend(normalize_meetings(rows, label))
+                matching = [r for r in rows if not (r.get('BILL_ID') or r.get('BILL_NO')) or
+                            str(r.get('BILL_ID') or '') == str(bill.get('bill_id') or '') or
+                            str(r.get('BILL_NO') or '') == bill['number']]
+                all_meetings.extend(normalize_meetings(matching, label))
                 observed = True
             except (ValueError, OSError, TimeoutError, json.JSONDecodeError) as exc:
                 result[code + '_error'] = type(exc).__name__
     try:
         rows = assembly_query(key, 'TVBPMCONFINFO', {'AGE': 22, 'BILL_NO': bill['number']}, 100)
-        only_this_bill = [row for row in rows if str(row.get('BILL_NO') or bill['number']) == bill['number']]
+        # BILL_NO가 없는 행은 다른 의안의 기록일 수 있으므로 무조건 해당 의안으로 추정하지 않는다.
+        only_this_bill = [row for row in rows if str(row.get('BILL_NO') or '') == bill['number'] or
+                          (bill.get('bill_id') and str(row.get('BILL_ID') or '') == str(bill['bill_id']))]
         all_meetings.extend(normalize_meetings(only_this_bill, '법안심사소위원회'))
         observed = True
     except (ValueError, OSError, TimeoutError, json.JSONDecodeError) as exc:
@@ -642,13 +705,8 @@ def detect_events(old, bills, law, assembly_ok, law_ok, ts):
                 changes.append({'kind': kind, 'number': bill['number'], 'title': bill['title'],
                     'message': msg, 'detected': ts, 'url': linked['evidence_url'],
                     'related_bill_numbers': [bill['number'], linked['number']]})
-            if before and before.get('meetings_ok') and bill.get('meetings_ok'):
-                before_keys = {(m.get('date'), m.get('name'), m.get('result')) for m in before.get('meetings', [])}
-                for m in bill.get('meetings', []):
-                    if (m.get('date'), m.get('name'), m.get('result')) not in before_keys:
-                        changes.append({'kind': '회의정보 변경', 'number': bill['number'], 'title': bill['title'],
-                            'message': f"{m.get('date') or '일자 미확인'} · {m.get('name')} · {m.get('result')}",
-                            'detected': ts, 'url': bill['url']})
+            if before:
+                changes.extend(meeting_changes(before, bill, bill, ts))
     previous_law = old.get('law')
     if law_ok and previous_law and old.get('sources', {}).get('law', {}).get('status') == '정상':
         keys = ['published', 'effective', 'number', 'amendment', 'serial']
